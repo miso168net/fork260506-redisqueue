@@ -1,0 +1,5 @@
+.graphify_python
+.graphify_incremental.json
+.graphify_*.json
+.graphify_chunk_*.json
+.needs_update

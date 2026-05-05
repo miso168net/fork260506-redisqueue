@@ -1,0 +1,1724 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "License and Initial Release",
+      "x": 0,
+      "y": 0,
+      "width": 880,
+      "height": 620,
+      "color": "1"
+    },
+    {
+      "id": "n_changelog_first_producer_consumer",
+      "type": "file",
+      "file": "graphify/obsidian/First version of producer and consumer.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_license_mit",
+      "type": "file",
+      "file": "graphify/obsidian/MIT License.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_message",
+      "type": "file",
+      "file": "graphify/obsidian/Message struct.md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_new_producer_with_options",
+      "type": "file",
+      "file": "graphify/obsidian/NewProducerWithOptions.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_producer",
+      "type": "file",
+      "file": "graphify/obsidian/Producer_1.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_enqueue",
+      "type": "file",
+      "file": "graphify/obsidian/Producer.Enqueue.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_producer_options",
+      "type": "file",
+      "file": "graphify/obsidian/ProducerOptions_1.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_redis_streams",
+      "type": "file",
+      "file": "graphify/obsidian/Redis Streams.md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_license_robin_joseph",
+      "type": "file",
+      "file": "graphify/obsidian/Robin Joseph (Copyright 2019).md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_stream_max_length",
+      "type": "file",
+      "file": "graphify/obsidian/Stream max length.md",
+      "x": 20,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_x_fork_branch_origin_intermediate",
+      "type": "file",
+      "file": "graphify/obsidian/go-admin-teamredisqueue (intermediate).md",
+      "x": 220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_x_fork_branch_origin_repo",
+      "type": "file",
+      "file": "graphify/obsidian/miso168netfork260506-redisqueue.md",
+      "x": 420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_redisqueue",
+      "type": "file",
+      "file": "graphify/obsidian/redisqueue (project).md",
+      "x": 20,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_x_fork_branch_origin_upstream",
+      "type": "file",
+      "file": "graphify/obsidian/robinjoseph08redisqueue (upstream).md",
+      "x": 220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_changelog_v100",
+      "type": "file",
+      "file": "graphify/obsidian/v1.0.0 (2019-07-13).md",
+      "x": 420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Consumer Configuration",
+      "x": 960,
+      "y": 0,
+      "width": 880,
+      "height": 620,
+      "color": "2"
+    },
+    {
+      "id": "n_readme_at_least_once",
+      "type": "file",
+      "file": "graphify/obsidian/At-least-once delivery (claimack).md",
+      "x": 980,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_batch_size",
+      "type": "file",
+      "file": "graphify/obsidian/Batch size (BufferSize).md",
+      "x": 1180,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_concurrency",
+      "type": "file",
+      "file": "graphify/obsidian/Concurrency setting.md",
+      "x": 1380,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_consumer",
+      "type": "file",
+      "file": "graphify/obsidian/Consumer_1.md",
+      "x": 980,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_register",
+      "type": "file",
+      "file": "graphify/obsidian/Consumer.Register.md",
+      "x": 1180,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_run",
+      "type": "file",
+      "file": "graphify/obsidian/Consumer.Run.md",
+      "x": 1380,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_consumer_options",
+      "type": "file",
+      "file": "graphify/obsidian/ConsumerOptions_1.md",
+      "x": 980,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_error_channel",
+      "type": "file",
+      "file": "graphify/obsidian/Errors channel.md",
+      "x": 1180,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_signal_handling",
+      "type": "file",
+      "file": "graphify/obsidian/Graceful SIGINTSIGTERM handling.md",
+      "x": 1380,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_panic_handling",
+      "type": "file",
+      "file": "graphify/obsidian/Graceful panic handling.md",
+      "x": 980,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_multi_streams",
+      "type": "file",
+      "file": "graphify/obsidian/Multiple streams support.md",
+      "x": 1180,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_new_consumer_with_options",
+      "type": "file",
+      "file": "graphify/obsidian/NewConsumerWithOptions.md",
+      "x": 1380,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_visibility_timeout",
+      "type": "file",
+      "file": "graphify/obsidian/Visibility timeout.md",
+      "x": 980,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Consumer Lifecycle",
+      "x": 1920,
+      "y": 0,
+      "width": 880,
+      "height": 520,
+      "color": "3"
+    },
+    {
+      "id": "n_consumer_consumer_run",
+      "type": "file",
+      "file": "graphify/obsidian/.Run().md",
+      "x": 1940,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumer_shutdown",
+      "type": "file",
+      "file": "graphify/obsidian/.Shutdown().md",
+      "x": 2140,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumer_enqueue",
+      "type": "file",
+      "file": "graphify/obsidian/.enqueue().md",
+      "x": 2340,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumer_poll",
+      "type": "file",
+      "file": "graphify/obsidian/.poll().md",
+      "x": 1940,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumer_process",
+      "type": "file",
+      "file": "graphify/obsidian/.process().md",
+      "x": 2140,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumer_reclaim",
+      "type": "file",
+      "file": "graphify/obsidian/.reclaim().md",
+      "x": 2340,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumer_work",
+      "type": "file",
+      "file": "graphify/obsidian/.work().md",
+      "x": 1940,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumer",
+      "type": "file",
+      "file": "graphify/obsidian/Consumer.md",
+      "x": 2140,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_signals_test_testnewsignalhandler",
+      "type": "file",
+      "file": "graphify/obsidian/TestNewSignalHandler().md",
+      "x": 2340,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_signals_newsignalhandler",
+      "type": "file",
+      "file": "graphify/obsidian/newSignalHandler().md",
+      "x": 1940,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_signals_go",
+      "type": "file",
+      "file": "graphify/obsidian/signals.go.md",
+      "x": 2140,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_signals_test_go",
+      "type": "file",
+      "file": "graphify/obsidian/signals_test.go.md",
+      "x": 2340,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Consumer Registration",
+      "x": 2880,
+      "y": 0,
+      "width": 880,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "n_consumer_consumer_register",
+      "type": "file",
+      "file": "graphify/obsidian/.Register().md",
+      "x": 2900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumer_registerwithlastid",
+      "type": "file",
+      "file": "graphify/obsidian/.RegisterWithLastID().md",
+      "x": 3100,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumerfunc",
+      "type": "file",
+      "file": "graphify/obsidian/ConsumerFunc.md",
+      "x": 3300,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumeroptions",
+      "type": "file",
+      "file": "graphify/obsidian/ConsumerOptions.md",
+      "x": 2900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_newconsumer",
+      "type": "file",
+      "file": "graphify/obsidian/NewConsumer().md",
+      "x": 3100,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_test_testnewconsumer",
+      "type": "file",
+      "file": "graphify/obsidian/TestNewConsumer().md",
+      "x": 3300,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_test_testregister",
+      "type": "file",
+      "file": "graphify/obsidian/TestRegister().md",
+      "x": 2900,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_test_testregisterwithlastid",
+      "type": "file",
+      "file": "graphify/obsidian/TestRegisterWithLastID().md",
+      "x": 3100,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_go",
+      "type": "file",
+      "file": "graphify/obsidian/consumer.go.md",
+      "x": 3300,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_test_go",
+      "type": "file",
+      "file": "graphify/obsidian/consumer_test.go.md",
+      "x": 2900,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_registeredconsumer",
+      "type": "file",
+      "file": "graphify/obsidian/registeredConsumer.md",
+      "x": 3100,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Producer Implementation",
+      "x": 0,
+      "y": 700,
+      "width": 880,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_producer_producer_enqueue",
+      "type": "file",
+      "file": "graphify/obsidian/.Enqueue().md",
+      "x": 20,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_newproducer",
+      "type": "file",
+      "file": "graphify/obsidian/NewProducer().md",
+      "x": 220,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_newproducerwithoptions",
+      "type": "file",
+      "file": "graphify/obsidian/NewProducerWithOptions().md",
+      "x": 420,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_producer",
+      "type": "file",
+      "file": "graphify/obsidian/Producer.md",
+      "x": 20,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_produceroptions",
+      "type": "file",
+      "file": "graphify/obsidian/ProducerOptions.md",
+      "x": 220,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_test_testenqueue",
+      "type": "file",
+      "file": "graphify/obsidian/TestEnqueue().md",
+      "x": 420,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_test_testnewproducer",
+      "type": "file",
+      "file": "graphify/obsidian/TestNewProducer().md",
+      "x": 20,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_test_testnewproducerwithoptions",
+      "type": "file",
+      "file": "graphify/obsidian/TestNewProducerWithOptions().md",
+      "x": 220,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_test_testrun",
+      "type": "file",
+      "file": "graphify/obsidian/TestRun().md",
+      "x": 420,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_go",
+      "type": "file",
+      "file": "graphify/obsidian/producer.go.md",
+      "x": 20,
+      "y": 1020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_test_go",
+      "type": "file",
+      "file": "graphify/obsidian/producer_test.go.md",
+      "x": 220,
+      "y": 1020,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Redis Client Layer",
+      "x": 960,
+      "y": 700,
+      "width": 660,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_consumer_newconsumerwithoptions",
+      "type": "file",
+      "file": "graphify/obsidian/NewConsumerWithOptions().md",
+      "x": 980,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_test_testnewconsumerwithoptions",
+      "type": "file",
+      "file": "graphify/obsidian/TestNewConsumerWithOptions().md",
+      "x": 1180,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_redis_test_testnewredisclient",
+      "type": "file",
+      "file": "graphify/obsidian/TestNewRedisClient().md",
+      "x": 1380,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_redis_test_testredispreflightchecks",
+      "type": "file",
+      "file": "graphify/obsidian/TestRedisPreflightChecks().md",
+      "x": 980,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_redis_incrementmessageid",
+      "type": "file",
+      "file": "graphify/obsidian/incrementMessageID().md",
+      "x": 1180,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_redis_newredisclient",
+      "type": "file",
+      "file": "graphify/obsidian/newRedisClient().md",
+      "x": 1380,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_redis_go",
+      "type": "file",
+      "file": "graphify/obsidian/redis.go.md",
+      "x": 980,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_redis_redispreflightchecks",
+      "type": "file",
+      "file": "graphify/obsidian/redisPreflightChecks().md",
+      "x": 1180,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_redis_test_go",
+      "type": "file",
+      "file": "graphify/obsidian/redis_test.go.md",
+      "x": 1380,
+      "y": 940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "Fork Branch Strategy",
+      "x": 1920,
+      "y": 700,
+      "width": 660,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_x_fork_branch_origin_head_508101c",
+      "type": "file",
+      "file": "graphify/obsidian/HEAD 508101c (Go 1.20 upgrade).md",
+      "x": 1940,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_x_fork_branch_origin_rationale_history",
+      "type": "file",
+      "file": "graphify/obsidian/Rationale preserve master without rewriting history.md",
+      "x": 2140,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_x_fork_branch_origin_rationale_naming",
+      "type": "file",
+      "file": "graphify/obsidian/Rationale unify default branch name to main.md",
+      "x": 2340,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_x_fork_branch_origin_main_branch",
+      "type": "file",
+      "file": "graphify/obsidian/main branch (fork).md",
+      "x": 1940,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_x_fork_branch_origin_master",
+      "type": "file",
+      "file": "graphify/obsidian/master branch.md",
+      "x": 2140,
+      "y": 860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "v2 Module Upgrade",
+      "x": 2880,
+      "y": 700,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_readme_module_v2",
+      "type": "file",
+      "file": "graphify/obsidian/github.comrobinjoseph08redisqueuev2 module.md",
+      "x": 2900,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_changelog_goredis_v7",
+      "type": "file",
+      "file": "graphify/obsidian/go-redisv7 + redisqueuev2 upgrade.md",
+      "x": 3100,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_changelog_v200",
+      "type": "file",
+      "file": "graphify/obsidian/v2.0.0 (2020-05-26).md",
+      "x": 3300,
+      "y": 780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Message Type",
+      "x": 0,
+      "y": 1300,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_message_message",
+      "type": "file",
+      "file": "graphify/obsidian/Message.md",
+      "x": 20,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_message_go",
+      "type": "file",
+      "file": "graphify/obsidian/message.go.md",
+      "x": 220,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Universal Client Support",
+      "x": 960,
+      "y": 1300,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_changelog_redis_universalclient",
+      "type": "file",
+      "file": "graphify/obsidian/redis.UniversalClient support.md",
+      "x": 980,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_changelog_v210",
+      "type": "file",
+      "file": "graphify/obsidian/v2.1.0 (2020-10-15).md",
+      "x": 1180,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Reclaim ID Fix",
+      "x": 1920,
+      "y": 1300,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_changelog_reclaim_fix",
+      "type": "file",
+      "file": "graphify/obsidian/reclaim increment ID when looping.md",
+      "x": 1940,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_changelog_v101",
+      "type": "file",
+      "file": "graphify/obsidian/v1.0.1 (2019-08-03).md",
+      "x": 2140,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "Package Doc",
+      "x": 2880,
+      "y": 1300,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_doc_go",
+      "type": "file",
+      "file": "graphify/obsidian/doc.go.md",
+      "x": 2900,
+      "y": 1380,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g12",
+      "type": "group",
+      "label": "Build Tools",
+      "x": 0,
+      "y": 1780,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_tools_go",
+      "type": "file",
+      "file": "graphify/obsidian/tools.go.md",
+      "x": 20,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g13",
+      "type": "group",
+      "label": "Release v1.1.0",
+      "x": 960,
+      "y": 1780,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_changelog_v110",
+      "type": "file",
+      "file": "graphify/obsidian/v1.1.0 (2020-05-26).md",
+      "x": 980,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_consumer_go_consumer_consumerfunc",
+      "fromNode": "n_consumer_go",
+      "toNode": "n_consumer_consumerfunc",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_go_consumer_registeredconsumer",
+      "fromNode": "n_consumer_go",
+      "toNode": "n_consumer_registeredconsumer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_go_consumer_consumeroptions",
+      "fromNode": "n_consumer_go",
+      "toNode": "n_consumer_consumeroptions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_go_consumer_consumer",
+      "fromNode": "n_consumer_go",
+      "toNode": "n_consumer_consumer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_go_consumer_newconsumer",
+      "fromNode": "n_consumer_go",
+      "toNode": "n_consumer_newconsumer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_go_consumer_newconsumerwithoptions",
+      "fromNode": "n_consumer_go",
+      "toNode": "n_consumer_newconsumerwithoptions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_consumer_consumer_registerwithlastid",
+      "fromNode": "n_consumer_consumer",
+      "toNode": "n_consumer_consumer_registerwithlastid",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_consumer_consumer_register",
+      "fromNode": "n_consumer_consumer",
+      "toNode": "n_consumer_consumer_register",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_consumer_consumer_run",
+      "fromNode": "n_consumer_consumer",
+      "toNode": "n_consumer_consumer_run",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_consumer_consumer_shutdown",
+      "fromNode": "n_consumer_consumer",
+      "toNode": "n_consumer_consumer_shutdown",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_consumer_consumer_reclaim",
+      "fromNode": "n_consumer_consumer",
+      "toNode": "n_consumer_consumer_reclaim",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_consumer_consumer_poll",
+      "fromNode": "n_consumer_consumer",
+      "toNode": "n_consumer_consumer_poll",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_consumer_consumer_enqueue",
+      "fromNode": "n_consumer_consumer",
+      "toNode": "n_consumer_consumer_enqueue",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_consumer_consumer_work",
+      "fromNode": "n_consumer_consumer",
+      "toNode": "n_consumer_consumer_work",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_consumer_consumer_process",
+      "fromNode": "n_consumer_consumer",
+      "toNode": "n_consumer_consumer_process",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_newconsumer_consumer_newconsumerwithoptions",
+      "fromNode": "n_consumer_newconsumer",
+      "toNode": "n_consumer_newconsumerwithoptions",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_newconsumer_consumer_test_testnewconsumer",
+      "fromNode": "n_consumer_newconsumer",
+      "toNode": "n_consumer_test_testnewconsumer",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_newconsumer_consumer_test_testregister",
+      "fromNode": "n_consumer_newconsumer",
+      "toNode": "n_consumer_test_testregister",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_newconsumer_consumer_test_testregisterwithlastid",
+      "fromNode": "n_consumer_newconsumer",
+      "toNode": "n_consumer_test_testregisterwithlastid",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_newconsumer_consumer_test_testrun",
+      "fromNode": "n_consumer_newconsumer",
+      "toNode": "n_consumer_test_testrun",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_newconsumerwithoptions_redis_newredisclient",
+      "fromNode": "n_consumer_newconsumerwithoptions",
+      "toNode": "n_redis_newredisclient",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_newconsumerwithoptions_redis_redispreflightchecks",
+      "fromNode": "n_consumer_newconsumerwithoptions",
+      "toNode": "n_redis_redispreflightchecks",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_newconsumerwithoptions_consumer_test_testnewconsumerwithoptions",
+      "fromNode": "n_consumer_newconsumerwithoptions",
+      "toNode": "n_consumer_test_testnewconsumerwithoptions",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_newconsumerwithoptions_consumer_test_testrun",
+      "fromNode": "n_consumer_newconsumerwithoptions",
+      "toNode": "n_consumer_test_testrun",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_registerwithlastid_consumer_consumer_register",
+      "fromNode": "n_consumer_consumer_registerwithlastid",
+      "toNode": "n_consumer_consumer_register",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_registerwithlastid_consumer_test_testregisterwithlastid",
+      "fromNode": "n_consumer_consumer_registerwithlastid",
+      "toNode": "n_consumer_test_testregisterwithlastid",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_register_consumer_test_testregister",
+      "fromNode": "n_consumer_consumer_register",
+      "toNode": "n_consumer_test_testregister",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_register_consumer_test_testrun",
+      "fromNode": "n_consumer_consumer_register",
+      "toNode": "n_consumer_test_testrun",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_consumer_consumer_reclaim",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_consumer_consumer_reclaim",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_consumer_consumer_poll",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_consumer_consumer_poll",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_consumer_consumer_shutdown",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_consumer_consumer_shutdown",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_consumer_consumer_work",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_consumer_consumer_work",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_signals_newsignalhandler",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_signals_newsignalhandler",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_consumer_test_testnewconsumer",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_consumer_test_testnewconsumer",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_consumer_test_testnewconsumerwithoptions",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_consumer_test_testnewconsumerwithoptions",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_consumer_test_testregister",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_consumer_test_testregister",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_consumer_test_testregisterwithlastid",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_consumer_test_testregisterwithlastid",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_consumer_test_testrun",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_consumer_test_testrun",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_producer_test_testnewproducer",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_producer_test_testnewproducer",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_producer_test_testnewproducerwithoptions",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_producer_test_testnewproducerwithoptions",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_producer_test_testenqueue",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_producer_test_testenqueue",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_redis_test_testnewredisclient",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_redis_test_testnewredisclient",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_redis_test_testredispreflightchecks",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_redis_test_testredispreflightchecks",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_run_signals_test_testnewsignalhandler",
+      "fromNode": "n_consumer_consumer_run",
+      "toNode": "n_signals_test_testnewsignalhandler",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_shutdown_consumer_test_testrun",
+      "fromNode": "n_consumer_consumer_shutdown",
+      "toNode": "n_consumer_test_testrun",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_reclaim_consumer_consumer_enqueue",
+      "fromNode": "n_consumer_consumer_reclaim",
+      "toNode": "n_consumer_consumer_enqueue",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_reclaim_redis_incrementmessageid",
+      "fromNode": "n_consumer_consumer_reclaim",
+      "toNode": "n_redis_incrementmessageid",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_consumer_poll_consumer_consumer_enqueue",
+      "fromNode": "n_consumer_consumer_poll",
+      "toNode": "n_consumer_consumer_enqueue",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_consumer_work_consumer_consumer_process",
+      "fromNode": "n_consumer_consumer_work",
+      "toNode": "n_consumer_consumer_process",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_test_go_consumer_test_testnewconsumer",
+      "fromNode": "n_consumer_test_go",
+      "toNode": "n_consumer_test_testnewconsumer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_test_go_consumer_test_testnewconsumerwithoptions",
+      "fromNode": "n_consumer_test_go",
+      "toNode": "n_consumer_test_testnewconsumerwithoptions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_test_go_consumer_test_testregister",
+      "fromNode": "n_consumer_test_go",
+      "toNode": "n_consumer_test_testregister",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_test_go_consumer_test_testregisterwithlastid",
+      "fromNode": "n_consumer_test_go",
+      "toNode": "n_consumer_test_testregisterwithlastid",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_test_go_consumer_test_testrun",
+      "fromNode": "n_consumer_test_go",
+      "toNode": "n_consumer_test_testrun",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_consumer_test_testnewconsumerwithoptions_redis_newredisclient",
+      "fromNode": "n_consumer_test_testnewconsumerwithoptions",
+      "toNode": "n_redis_newredisclient",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_test_testrun_producer_newproducer",
+      "fromNode": "n_consumer_test_testrun",
+      "toNode": "n_producer_newproducer",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_test_testrun_producer_producer_enqueue",
+      "fromNode": "n_consumer_test_testrun",
+      "toNode": "n_producer_producer_enqueue",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_consumer_test_testrun_producer_newproducerwithoptions",
+      "fromNode": "n_consumer_test_testrun",
+      "toNode": "n_producer_newproducerwithoptions",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_message_go_message_message",
+      "fromNode": "n_message_go",
+      "toNode": "n_message_message",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_producer_go_producer_produceroptions",
+      "fromNode": "n_producer_go",
+      "toNode": "n_producer_produceroptions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_producer_go_producer_producer",
+      "fromNode": "n_producer_go",
+      "toNode": "n_producer_producer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_producer_go_producer_newproducer",
+      "fromNode": "n_producer_go",
+      "toNode": "n_producer_newproducer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_producer_go_producer_newproducerwithoptions",
+      "fromNode": "n_producer_go",
+      "toNode": "n_producer_newproducerwithoptions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_producer_producer_producer_producer_enqueue",
+      "fromNode": "n_producer_producer",
+      "toNode": "n_producer_producer_enqueue",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_producer_newproducer_producer_newproducerwithoptions",
+      "fromNode": "n_producer_newproducer",
+      "toNode": "n_producer_newproducerwithoptions",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_producer_newproducer_producer_test_testnewproducer",
+      "fromNode": "n_producer_newproducer",
+      "toNode": "n_producer_test_testnewproducer",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_producer_newproducerwithoptions_redis_newredisclient",
+      "fromNode": "n_producer_newproducerwithoptions",
+      "toNode": "n_redis_newredisclient",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_producer_newproducerwithoptions_redis_redispreflightchecks",
+      "fromNode": "n_producer_newproducerwithoptions",
+      "toNode": "n_redis_redispreflightchecks",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_producer_newproducerwithoptions_producer_test_testnewproducerwithoptions",
+      "fromNode": "n_producer_newproducerwithoptions",
+      "toNode": "n_producer_test_testnewproducerwithoptions",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_producer_newproducerwithoptions_producer_test_testenqueue",
+      "fromNode": "n_producer_newproducerwithoptions",
+      "toNode": "n_producer_test_testenqueue",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_producer_producer_enqueue_producer_test_testenqueue",
+      "fromNode": "n_producer_producer_enqueue",
+      "toNode": "n_producer_test_testenqueue",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_producer_test_go_producer_test_testnewproducer",
+      "fromNode": "n_producer_test_go",
+      "toNode": "n_producer_test_testnewproducer",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_producer_test_go_producer_test_testnewproducerwithoptions",
+      "fromNode": "n_producer_test_go",
+      "toNode": "n_producer_test_testnewproducerwithoptions",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_producer_test_go_producer_test_testenqueue",
+      "fromNode": "n_producer_test_go",
+      "toNode": "n_producer_test_testenqueue",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_producer_test_testnewproducerwithoptions_redis_newredisclient",
+      "fromNode": "n_producer_test_testnewproducerwithoptions",
+      "toNode": "n_redis_newredisclient",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_redis_go_redis_newredisclient",
+      "fromNode": "n_redis_go",
+      "toNode": "n_redis_newredisclient",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_redis_go_redis_redispreflightchecks",
+      "fromNode": "n_redis_go",
+      "toNode": "n_redis_redispreflightchecks",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_redis_go_redis_incrementmessageid",
+      "fromNode": "n_redis_go",
+      "toNode": "n_redis_incrementmessageid",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_redis_newredisclient_redis_test_testnewredisclient",
+      "fromNode": "n_redis_newredisclient",
+      "toNode": "n_redis_test_testnewredisclient",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_redis_newredisclient_redis_test_testredispreflightchecks",
+      "fromNode": "n_redis_newredisclient",
+      "toNode": "n_redis_test_testredispreflightchecks",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_redis_redispreflightchecks_redis_test_testredispreflightchecks",
+      "fromNode": "n_redis_redispreflightchecks",
+      "toNode": "n_redis_test_testredispreflightchecks",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_redis_test_go_redis_test_testnewredisclient",
+      "fromNode": "n_redis_test_go",
+      "toNode": "n_redis_test_testnewredisclient",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_redis_test_go_redis_test_testredispreflightchecks",
+      "fromNode": "n_redis_test_go",
+      "toNode": "n_redis_test_testredispreflightchecks",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_signals_go_signals_newsignalhandler",
+      "fromNode": "n_signals_go",
+      "toNode": "n_signals_newsignalhandler",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_signals_newsignalhandler_signals_test_testnewsignalhandler",
+      "fromNode": "n_signals_newsignalhandler",
+      "toNode": "n_signals_test_testnewsignalhandler",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_signals_test_go_signals_test_testnewsignalhandler",
+      "fromNode": "n_signals_test_go",
+      "toNode": "n_signals_test_testnewsignalhandler",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_changelog_v210_changelog_redis_universalclient",
+      "fromNode": "n_changelog_v210",
+      "toNode": "n_changelog_redis_universalclient",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_changelog_v200_changelog_goredis_v7",
+      "fromNode": "n_changelog_v200",
+      "toNode": "n_changelog_goredis_v7",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_changelog_v200_readme_module_v2",
+      "fromNode": "n_changelog_v200",
+      "toNode": "n_readme_module_v2",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_changelog_v101_changelog_reclaim_fix",
+      "fromNode": "n_changelog_v101",
+      "toNode": "n_changelog_reclaim_fix",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_changelog_v100_changelog_first_producer_consumer",
+      "fromNode": "n_changelog_v100",
+      "toNode": "n_changelog_first_producer_consumer",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_changelog_first_producer_consumer_readme_producer",
+      "fromNode": "n_changelog_first_producer_consumer",
+      "toNode": "n_readme_producer",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_changelog_first_producer_consumer_readme_consumer",
+      "fromNode": "n_changelog_first_producer_consumer",
+      "toNode": "n_readme_consumer",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_license_mit_license_robin_joseph",
+      "fromNode": "n_license_mit",
+      "toNode": "n_license_robin_joseph",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_license_mit_readme_redisqueue",
+      "fromNode": "n_license_mit",
+      "toNode": "n_readme_redisqueue",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_readme_redisqueue_readme_redis_streams",
+      "fromNode": "n_readme_redisqueue",
+      "toNode": "n_readme_redis_streams",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_redisqueue_readme_producer",
+      "fromNode": "n_readme_redisqueue",
+      "toNode": "n_readme_producer",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_redisqueue_readme_consumer",
+      "fromNode": "n_readme_redisqueue",
+      "toNode": "n_readme_consumer",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_redisqueue_x_fork_branch_origin_repo",
+      "fromNode": "n_readme_redisqueue",
+      "toNode": "n_x_fork_branch_origin_repo",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_readme_redis_streams_readme_enqueue",
+      "fromNode": "n_readme_redis_streams",
+      "toNode": "n_readme_enqueue",
+      "label": "shares_data_with [INFERRED]"
+    },
+    {
+      "id": "e_readme_producer_readme_message",
+      "fromNode": "n_readme_producer",
+      "toNode": "n_readme_message",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_producer_readme_enqueue",
+      "fromNode": "n_readme_producer",
+      "toNode": "n_readme_enqueue",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_producer_readme_new_producer_with_options",
+      "fromNode": "n_readme_producer",
+      "toNode": "n_readme_new_producer_with_options",
+      "label": "implements [INFERRED]"
+    },
+    {
+      "id": "e_readme_producer_readme_stream_max_length",
+      "fromNode": "n_readme_producer",
+      "toNode": "n_readme_stream_max_length",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_consumer_readme_message",
+      "fromNode": "n_readme_consumer",
+      "toNode": "n_readme_message",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_consumer_readme_register",
+      "fromNode": "n_readme_consumer",
+      "toNode": "n_readme_register",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_consumer_readme_run",
+      "fromNode": "n_readme_consumer",
+      "toNode": "n_readme_run",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_consumer_readme_new_consumer_with_options",
+      "fromNode": "n_readme_consumer",
+      "toNode": "n_readme_new_consumer_with_options",
+      "label": "implements [INFERRED]"
+    },
+    {
+      "id": "e_readme_consumer_readme_at_least_once",
+      "fromNode": "n_readme_consumer",
+      "toNode": "n_readme_at_least_once",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_consumer_readme_visibility_timeout",
+      "fromNode": "n_readme_consumer",
+      "toNode": "n_readme_visibility_timeout",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_consumer_readme_signal_handling",
+      "fromNode": "n_readme_consumer",
+      "toNode": "n_readme_signal_handling",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_consumer_readme_error_channel",
+      "fromNode": "n_readme_consumer",
+      "toNode": "n_readme_error_channel",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_consumer_readme_panic_handling",
+      "fromNode": "n_readme_consumer",
+      "toNode": "n_readme_panic_handling",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_consumer_readme_concurrency",
+      "fromNode": "n_readme_consumer",
+      "toNode": "n_readme_concurrency",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_consumer_readme_batch_size",
+      "fromNode": "n_readme_consumer",
+      "toNode": "n_readme_batch_size",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_consumer_readme_multi_streams",
+      "fromNode": "n_readme_consumer",
+      "toNode": "n_readme_multi_streams",
+      "label": "implements [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_at_least_once_readme_visibility_timeout",
+      "fromNode": "n_readme_at_least_once",
+      "toNode": "n_readme_visibility_timeout",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_readme_visibility_timeout_readme_consumer_options",
+      "fromNode": "n_readme_visibility_timeout",
+      "toNode": "n_readme_consumer_options",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_stream_max_length_readme_producer_options",
+      "fromNode": "n_readme_stream_max_length",
+      "toNode": "n_readme_producer_options",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_concurrency_readme_consumer_options",
+      "fromNode": "n_readme_concurrency",
+      "toNode": "n_readme_consumer_options",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_concurrency_readme_batch_size",
+      "fromNode": "n_readme_concurrency",
+      "toNode": "n_readme_batch_size",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_readme_batch_size_readme_consumer_options",
+      "fromNode": "n_readme_batch_size",
+      "toNode": "n_readme_consumer_options",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_producer_options_readme_new_producer_with_options",
+      "fromNode": "n_readme_producer_options",
+      "toNode": "n_readme_new_producer_with_options",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_consumer_options_readme_new_consumer_with_options",
+      "fromNode": "n_readme_consumer_options",
+      "toNode": "n_readme_new_consumer_with_options",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_x_fork_branch_origin_main_branch_x_fork_branch_origin_master",
+      "fromNode": "n_x_fork_branch_origin_main_branch",
+      "toNode": "n_x_fork_branch_origin_master",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_x_fork_branch_origin_main_branch_x_fork_branch_origin_head_508101c",
+      "fromNode": "n_x_fork_branch_origin_main_branch",
+      "toNode": "n_x_fork_branch_origin_head_508101c",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_x_fork_branch_origin_main_branch_x_fork_branch_origin_rationale_naming",
+      "fromNode": "n_x_fork_branch_origin_main_branch",
+      "toNode": "n_x_fork_branch_origin_rationale_naming",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_x_fork_branch_origin_repo_x_fork_branch_origin_upstream",
+      "fromNode": "n_x_fork_branch_origin_repo",
+      "toNode": "n_x_fork_branch_origin_upstream",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_x_fork_branch_origin_repo_x_fork_branch_origin_intermediate",
+      "fromNode": "n_x_fork_branch_origin_repo",
+      "toNode": "n_x_fork_branch_origin_intermediate",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_x_fork_branch_origin_upstream_x_fork_branch_origin_intermediate",
+      "fromNode": "n_x_fork_branch_origin_upstream",
+      "toNode": "n_x_fork_branch_origin_intermediate",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_x_fork_branch_origin_master_x_fork_branch_origin_rationale_history",
+      "fromNode": "n_x_fork_branch_origin_master",
+      "toNode": "n_x_fork_branch_origin_rationale_history",
+      "label": "rationale_for [EXTRACTED]"
+    }
+  ]
+}
