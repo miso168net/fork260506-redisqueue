@@ -5,7 +5,8 @@
 | 項目 | 內容 |
 |---|---|
 | 此 repo | `miso168net/fork260506-redisqueue` |
-| 原始專案(推測) | `robinjoseph08/redisqueue`(可能透過 `go-admin-team/redisqueue` 中轉) |
+| 上游原作者 | `robinjoseph08/redisqueue` (LICENSE Robin Joseph 2019,module path `github.com/robinjoseph08/redisqueue/v2` 未改名) |
+| 直接 fork 來源 | `go-admin-team/redisqueue`(中轉 fork)— 證據:本 repo `git log` 中 `508101c feat✨: upgrade to 1.20` 與 `7576574 feat✨: 升级V9` 兩筆 commit,作者 `wenjianzhang <zwj777@live.com>` / `zhangwenjian` 為 go-admin-team 主要 maintainer,簡體中文 + `feat✨` emoji 風格亦為 go-admin-team 慣例 |
 | Fork 用途 | 個人學習與實驗用 fork |
 | Fork 建立日 | 2026-05-06 |
 | `main` 來源分支 | `master` |
