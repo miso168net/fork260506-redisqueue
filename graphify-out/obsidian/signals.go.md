@@ -1,12 +1,12 @@
 ---
 source_file: "signals.go"
 type: "code"
-community: "Consumer Lifecycle"
+community: "Consumer Internals and Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Consumer_Lifecycle
+  - community/Consumer_Internals_and_Tests
 ---
 
 # signals.go
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[newSignalHandler()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Consumer_Lifecycle
+#graphify/code #graphify/EXTRACTED #community/Consumer_Internals_and_Tests

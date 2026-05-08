@@ -1,12 +1,12 @@
 ---
 source_file: "redis_test.go"
 type: "code"
-community: "Redis Client Layer"
+community: "Producer and Redis Client"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Redis_Client_Layer
+  - community/Producer_and_Redis_Client
 ---
 
 # redis_test.go
@@ -15,4 +15,4 @@ tags:
 - [[TestNewRedisClient()]] - `contains` [EXTRACTED]
 - [[TestRedisPreflightChecks()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Redis_Client_Layer
+#graphify/code #graphify/EXTRACTED #community/Producer_and_Redis_Client

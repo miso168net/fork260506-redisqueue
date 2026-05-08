@@ -1,12 +1,12 @@
 ---
 source_file: "signals_test.go"
 type: "code"
-community: "Consumer Lifecycle"
+community: "Consumer Internals and Tests"
 location: "L11"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Consumer_Lifecycle
+  - community/Consumer_Internals_and_Tests
 ---
 
 # TestNewSignalHandler()
@@ -16,4 +16,4 @@ tags:
 - [[newSignalHandler()]] - `calls` [INFERRED]
 - [[signals_test.go]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Consumer_Lifecycle
+#graphify/code #graphify/INFERRED #community/Consumer_Internals_and_Tests

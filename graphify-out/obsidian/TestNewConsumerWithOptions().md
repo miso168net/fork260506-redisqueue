@@ -1,12 +1,12 @@
 ---
 source_file: "consumer_test.go"
 type: "code"
-community: "Redis Client Layer"
+community: "Producer and Redis Client"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Redis_Client_Layer
+  - community/Producer_and_Redis_Client
 ---
 
 # TestNewConsumerWithOptions()
@@ -17,4 +17,4 @@ tags:
 - [[consumer_test.go]] - `contains` [EXTRACTED]
 - [[newRedisClient()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Redis_Client_Layer
+#graphify/code #graphify/INFERRED #community/Producer_and_Redis_Client

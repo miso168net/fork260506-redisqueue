@@ -3,290 +3,389 @@
     {
       "id": "g0",
       "type": "group",
-      "label": "License and Initial Release",
+      "label": "Baseline Spec Design",
       "x": 0,
       "y": 0,
-      "width": 880,
-      "height": 620,
+      "width": 1100,
+      "height": 820,
       "color": "1"
     },
     {
-      "id": "n_changelog_first_producer_consumer",
+      "id": "n_baseline_design_doc",
       "type": "file",
-      "file": "graphify/obsidian/First version of producer and consumer.md",
+      "file": "Baseline Spec Design Document (2026-05-07).md",
       "x": 20,
       "y": 80,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_license_mit",
+      "id": "n_constitution_principle_ii_api_stability",
       "type": "file",
-      "file": "graphify/obsidian/MIT License.md",
+      "file": "Constitution Principle II Public API Stability.md",
       "x": 220,
       "y": 80,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_message",
+      "id": "n_baseline_fr_consumer_clauses",
       "type": "file",
-      "file": "graphify/obsidian/Message struct.md",
+      "file": "FR-Consumer- clause group.md",
       "x": 420,
       "y": 80,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_new_producer_with_options",
+      "id": "n_baseline_fr_errors_clauses",
       "type": "file",
-      "file": "graphify/obsidian/NewProducerWithOptions.md",
+      "file": "FR-Errors- clause group (Errors channel, validation, preflight).md",
       "x": 20,
       "y": 160,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_producer",
+      "id": "n_baseline_fr_internal_clauses",
       "type": "file",
-      "file": "graphify/obsidian/Producer_1.md",
+      "file": "FR-Internal- clause group (newRedisClient, redisPreflightChecks, etc.).md",
       "x": 220,
       "y": 160,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_enqueue",
+      "id": "n_baseline_fr_lifecycle_clauses",
       "type": "file",
-      "file": "graphify/obsidian/Producer.Enqueue.md",
+      "file": "FR-Lifecycle- clause group (signals, shutdown, panic recovery).md",
       "x": 420,
       "y": 160,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_producer_options",
+      "id": "n_baseline_fr_producer_clauses",
       "type": "file",
-      "file": "graphify/obsidian/ProducerOptions_1.md",
+      "file": "FR-Producer- clause group.md",
       "x": 20,
       "y": 240,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_redis_streams",
+      "id": "n_baseline_gap_report_appendix",
       "type": "file",
-      "file": "graphify/obsidian/Redis Streams.md",
+      "file": "Gap Report appendix (untested clauses, risk levels).md",
       "x": 220,
       "y": 240,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_license_robin_joseph",
+      "id": "n_baseline_sc_004_traceability_matrix",
       "type": "file",
-      "file": "graphify/obsidian/Robin Joseph (Copyright 2019).md",
+      "file": "SC-004 traceability FR- - test functions (gap report driver).md",
       "x": 420,
       "y": 240,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_stream_max_length",
+      "id": "n_claudemd_speckit_block",
       "type": "file",
-      "file": "graphify/obsidian/Stream max length.md",
+      "file": "SPECKIT block in CLAUDE.md",
       "x": 20,
       "y": 320,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_x_fork_branch_origin_intermediate",
+      "id": "n_baseline_use_case_us1_producer",
       "type": "file",
-      "file": "graphify/obsidian/go-admin-teamredisqueue (intermediate).md",
+      "file": "US1 Producer enqueues messages to Redis Stream.md",
       "x": 220,
       "y": 320,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_x_fork_branch_origin_repo",
+      "id": "n_baseline_use_case_us3_resilience",
       "type": "file",
-      "file": "graphify/obsidian/miso168netfork260506-redisqueue.md",
+      "file": "US3 Consumer survives panics, signals, stuck handlers.md",
       "x": 420,
       "y": 320,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_redisqueue",
+      "id": "n_baseline_use_case_us4_multistream",
       "type": "file",
-      "file": "graphify/obsidian/redisqueue (project).md",
+      "file": "US4 One Consumer registered against multiple streams.md",
       "x": 20,
       "y": 400,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_x_fork_branch_origin_upstream",
+      "id": "n_baseline_anchor_commit_db9f9f9",
       "type": "file",
-      "file": "graphify/obsidian/robinjoseph08redisqueue (upstream).md",
+      "file": "anchor commit db9f9f9 (constitution v1.0.0 ratified).md",
       "x": 220,
       "y": 400,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_changelog_v100",
+      "id": "n_baseline_coverage_depth_c",
       "type": "file",
-      "file": "graphify/obsidian/v1.0.0 (2019-07-13).md",
+      "file": "coverage depth C (public API + behavior + internal snapshot).md",
       "x": 420,
       "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_baseline_goal_freeze_contract",
+      "type": "file",
+      "file": "goal freeze public contract + implementation as reference baseline.md",
+      "x": 20,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_features_signal_handling",
+      "type": "file",
+      "file": "graceful SIGINTSIGTERM handling feature.md",
+      "x": 220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_features_panic_recovery",
+      "type": "file",
+      "file": "graceful panic recovery feature.md",
+      "x": 420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_baseline_layer_tag_design",
+      "type": "file",
+      "file": "layer tag design Contract vs Snapshot.md",
+      "x": 20,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_baseline_next_step_writing_plans",
+      "type": "file",
+      "file": "next step invoke superpowerswriting-plans.md",
+      "x": 220,
+      "y": 560,
       "width": 180,
       "height": 60
     },
     {
       "id": "g1",
       "type": "group",
-      "label": "Consumer Configuration",
-      "x": 960,
+      "label": "Fork Meta and Graphify Session",
+      "x": 1180,
       "y": 0,
-      "width": 880,
-      "height": 620,
+      "width": 1100,
+      "height": 820,
       "color": "2"
     },
     {
-      "id": "n_readme_at_least_once",
+      "id": "n_graphify_ambiguous_to_extracted_upgrade",
       "type": "file",
-      "file": "graphify/obsidian/At-least-once delivery (claimack).md",
-      "x": 980,
+      "file": "AMBIGUOUS edges upgraded to EXTRACTED via graph.json patch.md",
+      "x": 1200,
       "y": 80,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_batch_size",
+      "id": "n_graphify_pr_1_merge",
       "type": "file",
-      "file": "graphify/obsidian/Batch size (BufferSize).md",
-      "x": 1180,
+      "file": "PR 1 graphify-20260506 fast-forward merge (commit 0865e0b).md",
+      "x": 1400,
       "y": 80,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_concurrency",
+      "id": "n_readme_consumer_example",
       "type": "file",
-      "file": "graphify/obsidian/Concurrency setting.md",
-      "x": 1380,
+      "file": "README Consumer example (NewConsumerWithOptions  Register  Run).md",
+      "x": 1600,
       "y": 80,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_consumer",
+      "id": "n_readme_producer_example",
       "type": "file",
-      "file": "graphify/obsidian/Consumer_1.md",
-      "x": 980,
+      "file": "README Producer example (NewProducerWithOptions  Enqueue).md",
+      "x": 1200,
       "y": 160,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_register",
+      "id": "n_tree_consumer_go_role",
       "type": "file",
-      "file": "graphify/obsidian/Consumer.Register.md",
-      "x": 1180,
+      "file": "consumer.go role (Consumer + Register + Run + reclaimschedulerpanic recovery).md",
+      "x": 1400,
       "y": 160,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_run",
+      "id": "n_graphify_god_node_consumer",
       "type": "file",
-      "file": "graphify/obsidian/Consumer.Run.md",
-      "x": 1380,
+      "file": "god node Consumer (14 edges).md",
+      "x": 1600,
       "y": 160,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_consumer_options",
+      "id": "n_graphify_god_node_newproducerwithoptions",
       "type": "file",
-      "file": "graphify/obsidian/ConsumerOptions_1.md",
-      "x": 980,
+      "file": "god node NewProducerWithOptions() (7 edges).md",
+      "x": 1200,
       "y": 240,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_error_channel",
+      "id": "n_graphify_god_node_testrun",
       "type": "file",
-      "file": "graphify/obsidian/Errors channel.md",
-      "x": 1180,
+      "file": "god node TestRun() (9 edges).md",
+      "x": 1400,
       "y": 240,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_signal_handling",
+      "id": "n_graphify_god_node_newredisclient",
       "type": "file",
-      "file": "graphify/obsidian/Graceful SIGINTSIGTERM handling.md",
-      "x": 1380,
+      "file": "god node newRedisClient() (7 edges, cross-community bridge).md",
+      "x": 1600,
       "y": 240,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_panic_handling",
+      "id": "n_graphify_pipeline_summary",
       "type": "file",
-      "file": "graphify/obsidian/Graceful panic handling.md",
-      "x": 980,
+      "file": "graphify pipeline result (88 nodes  131 edges  14 communities).md",
+      "x": 1200,
       "y": 320,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_multi_streams",
+      "id": "n_claudemd_graphify_rules",
       "type": "file",
-      "file": "graphify/obsidian/Multiple streams support.md",
-      "x": 1180,
+      "file": "graphify rules for project (read GRAPH_REPORT before architecture, run graphify update after edits).md",
+      "x": 1400,
       "y": 320,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_new_consumer_with_options",
+      "id": "n_graphify_session_2026_05_06",
       "type": "file",
-      "file": "graphify/obsidian/NewConsumerWithOptions.md",
-      "x": 1380,
+      "file": "graphify session 2026-05-06 (graphify . --obsidian).md",
+      "x": 1600,
       "y": 320,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_readme_visibility_timeout",
+      "id": "n_branch_origin_main_2026_05_06",
       "type": "file",
-      "file": "graphify/obsidian/Visibility timeout.md",
-      "x": 980,
+      "file": "main branch created 2026-05-06 from master.md",
+      "x": 1200,
       "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_branch_origin_dual_branches",
+      "type": "file",
+      "file": "main+master dual long-lived branches strategy.md",
+      "x": 1400,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tree_message_go_role",
+      "type": "file",
+      "file": "message.go role (Message struct, only public value object).md",
+      "x": 1600,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tree_producer_go_role",
+      "type": "file",
+      "file": "producer.go role (Producer + Enqueue, calls newRedisClient + redisPreflightChecks).md",
+      "x": 1200,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tree_redis_go_role",
+      "type": "file",
+      "file": "redis.go role (newRedisClient  redisPreflightChecks  incrementMessageID).md",
+      "x": 1400,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tree_snapshot_2026_05_06",
+      "type": "file",
+      "file": "repo tree snapshot 2026-05-06 with per-file annotations.md",
+      "x": 1600,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tree_signals_go_role",
+      "type": "file",
+      "file": "signals.go role (newSignalHandler for SIGINTSIGTERM).md",
+      "x": 1200,
+      "y": 560,
       "width": 180,
       "height": 60
     },
     {
       "id": "g2",
       "type": "group",
-      "label": "Consumer Lifecycle",
-      "x": 1920,
+      "label": "Consumer Internals and Tests",
+      "x": 2360,
       "y": 0,
-      "width": 880,
-      "height": 520,
+      "width": 1100,
+      "height": 720,
       "color": "3"
     },
     {
       "id": "n_consumer_consumer_run",
       "type": "file",
-      "file": "graphify/obsidian/.Run().md",
-      "x": 1940,
+      "file": ".Run().md",
+      "x": 2380,
       "y": 80,
       "width": 180,
       "height": 60
@@ -294,8 +393,8 @@
     {
       "id": "n_consumer_consumer_shutdown",
       "type": "file",
-      "file": "graphify/obsidian/.Shutdown().md",
-      "x": 2140,
+      "file": ".Shutdown().md",
+      "x": 2580,
       "y": 80,
       "width": 180,
       "height": 60
@@ -303,8 +402,8 @@
     {
       "id": "n_consumer_consumer_enqueue",
       "type": "file",
-      "file": "graphify/obsidian/.enqueue().md",
-      "x": 2340,
+      "file": ".enqueue().md",
+      "x": 2780,
       "y": 80,
       "width": 180,
       "height": 60
@@ -312,8 +411,8 @@
     {
       "id": "n_consumer_consumer_poll",
       "type": "file",
-      "file": "graphify/obsidian/.poll().md",
-      "x": 1940,
+      "file": ".poll().md",
+      "x": 2380,
       "y": 160,
       "width": 180,
       "height": 60
@@ -321,8 +420,8 @@
     {
       "id": "n_consumer_consumer_process",
       "type": "file",
-      "file": "graphify/obsidian/.process().md",
-      "x": 2140,
+      "file": ".process().md",
+      "x": 2580,
       "y": 160,
       "width": 180,
       "height": 60
@@ -330,8 +429,8 @@
     {
       "id": "n_consumer_consumer_reclaim",
       "type": "file",
-      "file": "graphify/obsidian/.reclaim().md",
-      "x": 2340,
+      "file": ".reclaim().md",
+      "x": 2780,
       "y": 160,
       "width": 180,
       "height": 60
@@ -339,8 +438,8 @@
     {
       "id": "n_consumer_consumer_work",
       "type": "file",
-      "file": "graphify/obsidian/.work().md",
-      "x": 1940,
+      "file": ".work().md",
+      "x": 2380,
       "y": 240,
       "width": 180,
       "height": 60
@@ -348,587 +447,651 @@
     {
       "id": "n_consumer_consumer",
       "type": "file",
-      "file": "graphify/obsidian/Consumer.md",
-      "x": 2140,
+      "file": "Consumer.md",
+      "x": 2580,
       "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_signals_test_testnewsignalhandler",
-      "type": "file",
-      "file": "graphify/obsidian/TestNewSignalHandler().md",
-      "x": 2340,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_signals_newsignalhandler",
-      "type": "file",
-      "file": "graphify/obsidian/newSignalHandler().md",
-      "x": 1940,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_signals_go",
-      "type": "file",
-      "file": "graphify/obsidian/signals.go.md",
-      "x": 2140,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_signals_test_go",
-      "type": "file",
-      "file": "graphify/obsidian/signals_test.go.md",
-      "x": 2340,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g3",
-      "type": "group",
-      "label": "Consumer Registration",
-      "x": 2880,
-      "y": 0,
-      "width": 880,
-      "height": 520,
-      "color": "4"
-    },
-    {
-      "id": "n_consumer_consumer_register",
-      "type": "file",
-      "file": "graphify/obsidian/.Register().md",
-      "x": 2900,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_consumer_consumer_registerwithlastid",
-      "type": "file",
-      "file": "graphify/obsidian/.RegisterWithLastID().md",
-      "x": 3100,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_consumer_consumerfunc",
-      "type": "file",
-      "file": "graphify/obsidian/ConsumerFunc.md",
-      "x": 3300,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_consumer_consumeroptions",
-      "type": "file",
-      "file": "graphify/obsidian/ConsumerOptions.md",
-      "x": 2900,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_consumer_newconsumer",
-      "type": "file",
-      "file": "graphify/obsidian/NewConsumer().md",
-      "x": 3100,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_consumer_test_testnewconsumer",
-      "type": "file",
-      "file": "graphify/obsidian/TestNewConsumer().md",
-      "x": 3300,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_consumer_test_testregister",
-      "type": "file",
-      "file": "graphify/obsidian/TestRegister().md",
-      "x": 2900,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_consumer_test_testregisterwithlastid",
-      "type": "file",
-      "file": "graphify/obsidian/TestRegisterWithLastID().md",
-      "x": 3100,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_consumer_go",
-      "type": "file",
-      "file": "graphify/obsidian/consumer.go.md",
-      "x": 3300,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_consumer_test_go",
-      "type": "file",
-      "file": "graphify/obsidian/consumer_test.go.md",
-      "x": 2900,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_consumer_registeredconsumer",
-      "type": "file",
-      "file": "graphify/obsidian/registeredConsumer.md",
-      "x": 3100,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g4",
-      "type": "group",
-      "label": "Producer Implementation",
-      "x": 0,
-      "y": 700,
-      "width": 880,
-      "height": 520,
-      "color": "5"
-    },
-    {
-      "id": "n_producer_producer_enqueue",
-      "type": "file",
-      "file": "graphify/obsidian/.Enqueue().md",
-      "x": 20,
-      "y": 780,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_producer_newproducer",
-      "type": "file",
-      "file": "graphify/obsidian/NewProducer().md",
-      "x": 220,
-      "y": 780,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_producer_newproducerwithoptions",
-      "type": "file",
-      "file": "graphify/obsidian/NewProducerWithOptions().md",
-      "x": 420,
-      "y": 780,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_producer_producer",
-      "type": "file",
-      "file": "graphify/obsidian/Producer.md",
-      "x": 20,
-      "y": 860,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_producer_produceroptions",
-      "type": "file",
-      "file": "graphify/obsidian/ProducerOptions.md",
-      "x": 220,
-      "y": 860,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_producer_test_testenqueue",
       "type": "file",
-      "file": "graphify/obsidian/TestEnqueue().md",
-      "x": 420,
-      "y": 860,
+      "file": "TestEnqueue().md",
+      "x": 2780,
+      "y": 240,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_producer_test_testnewproducer",
       "type": "file",
-      "file": "graphify/obsidian/TestNewProducer().md",
-      "x": 20,
-      "y": 940,
+      "file": "TestNewProducer().md",
+      "x": 2380,
+      "y": 320,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_producer_test_testnewproducerwithoptions",
       "type": "file",
-      "file": "graphify/obsidian/TestNewProducerWithOptions().md",
-      "x": 220,
-      "y": 940,
+      "file": "TestNewProducerWithOptions().md",
+      "x": 2580,
+      "y": 320,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_consumer_test_testrun",
+      "id": "n_signals_test_testnewsignalhandler",
       "type": "file",
-      "file": "graphify/obsidian/TestRun().md",
-      "x": 420,
-      "y": 940,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_producer_go",
-      "type": "file",
-      "file": "graphify/obsidian/producer.go.md",
-      "x": 20,
-      "y": 1020,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_producer_test_go",
-      "type": "file",
-      "file": "graphify/obsidian/producer_test.go.md",
-      "x": 220,
-      "y": 1020,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g5",
-      "type": "group",
-      "label": "Redis Client Layer",
-      "x": 960,
-      "y": 700,
-      "width": 660,
-      "height": 420,
-      "color": "6"
-    },
-    {
-      "id": "n_consumer_newconsumerwithoptions",
-      "type": "file",
-      "file": "graphify/obsidian/NewConsumerWithOptions().md",
-      "x": 980,
-      "y": 780,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_consumer_test_testnewconsumerwithoptions",
-      "type": "file",
-      "file": "graphify/obsidian/TestNewConsumerWithOptions().md",
-      "x": 1180,
-      "y": 780,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_redis_test_testnewredisclient",
-      "type": "file",
-      "file": "graphify/obsidian/TestNewRedisClient().md",
-      "x": 1380,
-      "y": 780,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_redis_test_testredispreflightchecks",
-      "type": "file",
-      "file": "graphify/obsidian/TestRedisPreflightChecks().md",
-      "x": 980,
-      "y": 860,
+      "file": "TestNewSignalHandler().md",
+      "x": 2780,
+      "y": 320,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_redis_incrementmessageid",
       "type": "file",
-      "file": "graphify/obsidian/incrementMessageID().md",
-      "x": 1180,
-      "y": 860,
+      "file": "incrementMessageID().md",
+      "x": 2380,
+      "y": 400,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_redis_newredisclient",
+      "id": "n_signals_newsignalhandler",
       "type": "file",
-      "file": "graphify/obsidian/newRedisClient().md",
-      "x": 1380,
-      "y": 860,
+      "file": "newSignalHandler().md",
+      "x": 2580,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_test_go",
+      "type": "file",
+      "file": "producer_test.go.md",
+      "x": 2780,
+      "y": 400,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_redis_go",
       "type": "file",
-      "file": "graphify/obsidian/redis.go.md",
-      "x": 980,
-      "y": 940,
+      "file": "redis.go.md",
+      "x": 2380,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_signals_go",
+      "type": "file",
+      "file": "signals.go.md",
+      "x": 2580,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_signals_test_go",
+      "type": "file",
+      "file": "signals_test.go.md",
+      "x": 2780,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Producer and Redis Client",
+      "x": 3540,
+      "y": 0,
+      "width": 880,
+      "height": 620,
+      "color": "4"
+    },
+    {
+      "id": "n_producer_producer_enqueue",
+      "type": "file",
+      "file": ".Enqueue().md",
+      "x": 3560,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_newconsumerwithoptions",
+      "type": "file",
+      "file": "NewConsumerWithOptions().md",
+      "x": 3760,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_newproducer",
+      "type": "file",
+      "file": "NewProducer().md",
+      "x": 3960,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_newproducerwithoptions",
+      "type": "file",
+      "file": "NewProducerWithOptions().md",
+      "x": 3560,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_producer",
+      "type": "file",
+      "file": "Producer.md",
+      "x": 3760,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_produceroptions",
+      "type": "file",
+      "file": "ProducerOptions.md",
+      "x": 3960,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_test_testnewconsumerwithoptions",
+      "type": "file",
+      "file": "TestNewConsumerWithOptions().md",
+      "x": 3560,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_redis_test_testnewredisclient",
+      "type": "file",
+      "file": "TestNewRedisClient().md",
+      "x": 3760,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_redis_test_testredispreflightchecks",
+      "type": "file",
+      "file": "TestRedisPreflightChecks().md",
+      "x": 3960,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_test_testrun",
+      "type": "file",
+      "file": "TestRun().md",
+      "x": 3560,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_redis_newredisclient",
+      "type": "file",
+      "file": "newRedisClient().md",
+      "x": 3760,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_producer_go",
+      "type": "file",
+      "file": "producer.go.md",
+      "x": 3960,
+      "y": 320,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_redis_redispreflightchecks",
       "type": "file",
-      "file": "graphify/obsidian/redisPreflightChecks().md",
-      "x": 1180,
-      "y": 940,
+      "file": "redisPreflightChecks().md",
+      "x": 3560,
+      "y": 400,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_redis_test_go",
       "type": "file",
-      "file": "graphify/obsidian/redis_test.go.md",
-      "x": 1380,
-      "y": 940,
+      "file": "redis_test.go.md",
+      "x": 3760,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Consumer Registration",
+      "x": 0,
+      "y": 900,
+      "width": 880,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_consumer_consumer_register",
+      "type": "file",
+      "file": ".Register().md",
+      "x": 20,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumer_registerwithlastid",
+      "type": "file",
+      "file": ".RegisterWithLastID().md",
+      "x": 220,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumerfunc",
+      "type": "file",
+      "file": "ConsumerFunc.md",
+      "x": 420,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_consumeroptions",
+      "type": "file",
+      "file": "ConsumerOptions.md",
+      "x": 20,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_newconsumer",
+      "type": "file",
+      "file": "NewConsumer().md",
+      "x": 220,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_test_testnewconsumer",
+      "type": "file",
+      "file": "TestNewConsumer().md",
+      "x": 420,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_test_testregister",
+      "type": "file",
+      "file": "TestRegister().md",
+      "x": 20,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_test_testregisterwithlastid",
+      "type": "file",
+      "file": "TestRegisterWithLastID().md",
+      "x": 220,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_go",
+      "type": "file",
+      "file": "consumer.go.md",
+      "x": 420,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_test_go",
+      "type": "file",
+      "file": "consumer_test.go.md",
+      "x": 20,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_consumer_registeredconsumer",
+      "type": "file",
+      "file": "registeredConsumer.md",
+      "x": 220,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Fork Chain and Module Identity",
+      "x": 1180,
+      "y": 900,
+      "width": 660,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_license_mit_robin_joseph",
+      "type": "file",
+      "file": "MIT License (Robin Joseph 2019).md",
+      "x": 1200,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_graphify_fork_chain_conclusion",
+      "type": "file",
+      "file": "fork chain robinjoseph08 - go-admin-team - miso168net.md",
+      "x": 1400,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_fork_go_admin_team_redisqueue_intermediate",
+      "type": "file",
+      "file": "go-admin-teamredisqueue (intermediate fork).md",
+      "x": 1600,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_fork_miso168net_redisqueue",
+      "type": "file",
+      "file": "miso168netfork260506-redisqueue (this repo).md",
+      "x": 1200,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_module_path_v2",
+      "type": "file",
+      "file": "module path github.comrobinjoseph08redisqueuev2.md",
+      "x": 1400,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_changelog_v2_0_0",
+      "type": "file",
+      "file": "redisqueue v2.0.0 release (go-redisv7, v2 module path).md",
+      "x": 1600,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_fork_robinjoseph08_redisqueue_upstream",
+      "type": "file",
+      "file": "robinjoseph08redisqueue (upstream original).md",
+      "x": 1200,
+      "y": 1140,
       "width": 180,
       "height": 60
     },
     {
       "id": "g6",
       "type": "group",
-      "label": "Fork Branch Strategy",
-      "x": 1920,
-      "y": 700,
+      "label": "At-Least-Once Delivery",
+      "x": 2360,
+      "y": 900,
       "width": 660,
       "height": 400,
       "color": "1"
     },
     {
-      "id": "n_x_fork_branch_origin_head_508101c",
+      "id": "n_baseline_fr_delivery_clauses",
       "type": "file",
-      "file": "graphify/obsidian/HEAD 508101c (Go 1.20 upgrade).md",
-      "x": 1940,
-      "y": 780,
+      "file": "FR-Delivery- clause group (at-least-once, claimack, visibility timeout).md",
+      "x": 2380,
+      "y": 980,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_x_fork_branch_origin_rationale_history",
+      "id": "n_baseline_use_case_us2_consumer",
       "type": "file",
-      "file": "graphify/obsidian/Rationale preserve master without rewriting history.md",
-      "x": 2140,
-      "y": 780,
+      "file": "US2 Consumer at-least-once processing.md",
+      "x": 2580,
+      "y": 980,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_x_fork_branch_origin_rationale_naming",
+      "id": "n_readme_features_at_least_once",
       "type": "file",
-      "file": "graphify/obsidian/Rationale unify default branch name to main.md",
-      "x": 2340,
-      "y": 780,
+      "file": "at-least-once delivery feature (claimack).md",
+      "x": 2780,
+      "y": 980,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_x_fork_branch_origin_main_branch",
+      "id": "n_changelog_v1_0_1_reclaim_fix",
       "type": "file",
-      "file": "graphify/obsidian/main branch (fork).md",
-      "x": 1940,
-      "y": 860,
+      "file": "redisqueue v1.0.1 reclaim ID increment fix.md",
+      "x": 2380,
+      "y": 1060,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_x_fork_branch_origin_master",
+      "id": "n_readme_features_visibility_timeout",
       "type": "file",
-      "file": "graphify/obsidian/master branch.md",
-      "x": 2140,
-      "y": 860,
+      "file": "visibility timeout feature.md",
+      "x": 2580,
+      "y": 1060,
       "width": 180,
       "height": 60
     },
     {
       "id": "g7",
       "type": "group",
-      "label": "v2 Module Upgrade",
-      "x": 2880,
-      "y": 700,
+      "label": "Message Type",
+      "x": 3540,
+      "y": 900,
       "width": 600,
       "height": 400,
       "color": "2"
     },
     {
-      "id": "n_readme_module_v2",
-      "type": "file",
-      "file": "graphify/obsidian/github.comrobinjoseph08redisqueuev2 module.md",
-      "x": 2900,
-      "y": 780,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_changelog_goredis_v7",
-      "type": "file",
-      "file": "graphify/obsidian/go-redisv7 + redisqueuev2 upgrade.md",
-      "x": 3100,
-      "y": 780,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_changelog_v200",
-      "type": "file",
-      "file": "graphify/obsidian/v2.0.0 (2020-05-26).md",
-      "x": 3300,
-      "y": 780,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g8",
-      "type": "group",
-      "label": "Message Type",
-      "x": 0,
-      "y": 1300,
-      "width": 600,
-      "height": 400,
-      "color": "3"
-    },
-    {
       "id": "n_message_message",
       "type": "file",
-      "file": "graphify/obsidian/Message.md",
-      "x": 20,
-      "y": 1380,
+      "file": "Message.md",
+      "x": 3560,
+      "y": 980,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_message_go",
       "type": "file",
-      "file": "graphify/obsidian/message.go.md",
+      "file": "message.go.md",
+      "x": 3760,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Library Origin (v1.0.0)",
+      "x": 0,
+      "y": 1500,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_readme_redisqueue_library",
+      "type": "file",
+      "file": "redisqueue library overview (ProducerConsumer over Redis Streams).md",
+      "x": 20,
+      "y": 1580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_changelog_v1_0_0",
+      "type": "file",
+      "file": "redisqueue v1.0.0 first ProducerConsumer release.md",
       "x": 220,
-      "y": 1380,
+      "y": 1580,
       "width": 180,
       "height": 60
     },
     {
       "id": "g9",
       "type": "group",
-      "label": "Universal Client Support",
-      "x": 960,
-      "y": 1300,
+      "label": "Versioning Strategy",
+      "x": 1180,
+      "y": 1500,
       "width": 600,
       "height": 400,
       "color": "4"
     },
     {
-      "id": "n_changelog_redis_universalclient",
+      "id": "n_tree_module_path_upgrade_strategy",
       "type": "file",
-      "file": "graphify/obsidian/redis.UniversalClient support.md",
-      "x": 980,
-      "y": 1380,
+      "file": "module path upgrade strategy (v1-v2 new path, no in-package alias).md",
+      "x": 1200,
+      "y": 1580,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_changelog_v210",
+      "id": "n_tree_no_options_go_convention",
       "type": "file",
-      "file": "graphify/obsidian/v2.1.0 (2020-10-15).md",
-      "x": 1180,
-      "y": 1380,
+      "file": "single struct + constructor variants convention (no options.go).md",
+      "x": 1400,
+      "y": 1580,
       "width": 180,
       "height": 60
     },
     {
       "id": "g10",
       "type": "group",
-      "label": "Reclaim ID Fix",
-      "x": 1920,
-      "y": 1300,
+      "label": "Package Doc",
+      "x": 2360,
+      "y": 1500,
       "width": 600,
       "height": 400,
       "color": "5"
     },
     {
-      "id": "n_changelog_reclaim_fix",
+      "id": "n_doc_go",
       "type": "file",
-      "file": "graphify/obsidian/reclaim increment ID when looping.md",
-      "x": 1940,
-      "y": 1380,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_changelog_v101",
-      "type": "file",
-      "file": "graphify/obsidian/v1.0.1 (2019-08-03).md",
-      "x": 2140,
-      "y": 1380,
+      "file": "doc.go.md",
+      "x": 2380,
+      "y": 1580,
       "width": 180,
       "height": 60
     },
     {
       "id": "g11",
       "type": "group",
-      "label": "Package Doc",
-      "x": 2880,
-      "y": 1300,
+      "label": "Build Tools File",
+      "x": 3540,
+      "y": 1500,
       "width": 600,
       "height": 400,
       "color": "6"
     },
     {
-      "id": "n_doc_go",
+      "id": "n_tools_go",
       "type": "file",
-      "file": "graphify/obsidian/doc.go.md",
-      "x": 2900,
-      "y": 1380,
+      "file": "tools.go.md",
+      "x": 3560,
+      "y": 1580,
       "width": 180,
       "height": 60
     },
     {
       "id": "g12",
       "type": "group",
-      "label": "Build Tools",
+      "label": "Release v2.1.0",
       "x": 0,
-      "y": 1780,
+      "y": 1980,
       "width": 600,
       "height": 400,
       "color": "1"
     },
     {
-      "id": "n_tools_go",
+      "id": "n_changelog_v2_1_0",
       "type": "file",
-      "file": "graphify/obsidian/tools.go.md",
+      "file": "redisqueue v2.1.0 release.md",
       "x": 20,
-      "y": 1860,
+      "y": 2060,
       "width": 180,
       "height": 60
     },
     {
       "id": "g13",
       "type": "group",
-      "label": "Release v1.1.0",
-      "x": 960,
-      "y": 1780,
+      "label": "Build Tools Idiom",
+      "x": 1180,
+      "y": 1980,
       "width": 600,
       "height": 400,
       "color": "2"
     },
     {
-      "id": "n_changelog_v110",
+      "id": "n_tree_tools_go_idiom",
       "type": "file",
-      "file": "graphify/obsidian/v1.1.0 (2020-05-26).md",
-      "x": 980,
-      "y": 1860,
+      "file": "tools.go +build tools idiom (Go 1.13+ go.mod tool versioning).md",
+      "x": 1200,
+      "y": 2060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g14",
+      "type": "group",
+      "label": "Coverage Gate",
+      "x": 2360,
+      "y": 1980,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_tree_coverage_gate_script",
+      "type": "file",
+      "file": "scriptscoverage.sh coverage=80% gate.md",
+      "x": 2380,
+      "y": 2060,
       "width": 180,
       "height": 60
     }
@@ -1271,12 +1434,6 @@
       "label": "calls [INFERRED]"
     },
     {
-      "id": "e_consumer_test_testrun_producer_producer_enqueue",
-      "fromNode": "n_consumer_test_testrun",
-      "toNode": "n_producer_producer_enqueue",
-      "label": "calls [INFERRED]"
-    },
-    {
       "id": "e_consumer_test_testrun_producer_newproducerwithoptions",
       "fromNode": "n_consumer_test_testrun",
       "toNode": "n_producer_newproducerwithoptions",
@@ -1351,12 +1508,6 @@
     {
       "id": "e_producer_newproducerwithoptions_producer_test_testenqueue",
       "fromNode": "n_producer_newproducerwithoptions",
-      "toNode": "n_producer_test_testenqueue",
-      "label": "calls [INFERRED]"
-    },
-    {
-      "id": "e_producer_producer_enqueue_producer_test_testenqueue",
-      "fromNode": "n_producer_producer_enqueue",
       "toNode": "n_producer_test_testenqueue",
       "label": "calls [INFERRED]"
     },
@@ -1451,273 +1602,393 @@
       "label": "contains [EXTRACTED]"
     },
     {
-      "id": "e_changelog_v210_changelog_redis_universalclient",
-      "fromNode": "n_changelog_v210",
-      "toNode": "n_changelog_redis_universalclient",
+      "id": "e_changelog_v2_0_0_readme_module_path_v2",
+      "fromNode": "n_changelog_v2_0_0",
+      "toNode": "n_readme_module_path_v2",
       "label": "references [EXTRACTED]"
     },
     {
-      "id": "e_changelog_v200_changelog_goredis_v7",
-      "fromNode": "n_changelog_v200",
-      "toNode": "n_changelog_goredis_v7",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_changelog_v200_readme_module_v2",
-      "fromNode": "n_changelog_v200",
-      "toNode": "n_readme_module_v2",
-      "label": "conceptually_related_to [INFERRED]"
-    },
-    {
-      "id": "e_changelog_v101_changelog_reclaim_fix",
-      "fromNode": "n_changelog_v101",
-      "toNode": "n_changelog_reclaim_fix",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_changelog_v100_changelog_first_producer_consumer",
-      "fromNode": "n_changelog_v100",
-      "toNode": "n_changelog_first_producer_consumer",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_changelog_first_producer_consumer_readme_producer",
-      "fromNode": "n_changelog_first_producer_consumer",
-      "toNode": "n_readme_producer",
-      "label": "conceptually_related_to [INFERRED]"
-    },
-    {
-      "id": "e_changelog_first_producer_consumer_readme_consumer",
-      "fromNode": "n_changelog_first_producer_consumer",
-      "toNode": "n_readme_consumer",
-      "label": "conceptually_related_to [INFERRED]"
-    },
-    {
-      "id": "e_license_mit_license_robin_joseph",
-      "fromNode": "n_license_mit",
-      "toNode": "n_license_robin_joseph",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_license_mit_readme_redisqueue",
-      "fromNode": "n_license_mit",
-      "toNode": "n_readme_redisqueue",
-      "label": "references [INFERRED]"
-    },
-    {
-      "id": "e_readme_redisqueue_readme_redis_streams",
-      "fromNode": "n_readme_redisqueue",
-      "toNode": "n_readme_redis_streams",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_redisqueue_readme_producer",
-      "fromNode": "n_readme_redisqueue",
-      "toNode": "n_readme_producer",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_redisqueue_readme_consumer",
-      "fromNode": "n_readme_redisqueue",
-      "toNode": "n_readme_consumer",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_redisqueue_x_fork_branch_origin_repo",
-      "fromNode": "n_readme_redisqueue",
-      "toNode": "n_x_fork_branch_origin_repo",
-      "label": "conceptually_related_to [INFERRED]"
-    },
-    {
-      "id": "e_readme_redis_streams_readme_enqueue",
-      "fromNode": "n_readme_redis_streams",
-      "toNode": "n_readme_enqueue",
-      "label": "shares_data_with [INFERRED]"
-    },
-    {
-      "id": "e_readme_producer_readme_message",
-      "fromNode": "n_readme_producer",
-      "toNode": "n_readme_message",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_producer_readme_enqueue",
-      "fromNode": "n_readme_producer",
-      "toNode": "n_readme_enqueue",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_producer_readme_new_producer_with_options",
-      "fromNode": "n_readme_producer",
-      "toNode": "n_readme_new_producer_with_options",
-      "label": "implements [INFERRED]"
-    },
-    {
-      "id": "e_readme_producer_readme_stream_max_length",
-      "fromNode": "n_readme_producer",
-      "toNode": "n_readme_stream_max_length",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_consumer_readme_message",
-      "fromNode": "n_readme_consumer",
-      "toNode": "n_readme_message",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_consumer_readme_register",
-      "fromNode": "n_readme_consumer",
-      "toNode": "n_readme_register",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_consumer_readme_run",
-      "fromNode": "n_readme_consumer",
-      "toNode": "n_readme_run",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_consumer_readme_new_consumer_with_options",
-      "fromNode": "n_readme_consumer",
-      "toNode": "n_readme_new_consumer_with_options",
-      "label": "implements [INFERRED]"
-    },
-    {
-      "id": "e_readme_consumer_readme_at_least_once",
-      "fromNode": "n_readme_consumer",
-      "toNode": "n_readme_at_least_once",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_consumer_readme_visibility_timeout",
-      "fromNode": "n_readme_consumer",
-      "toNode": "n_readme_visibility_timeout",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_consumer_readme_signal_handling",
-      "fromNode": "n_readme_consumer",
-      "toNode": "n_readme_signal_handling",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_consumer_readme_error_channel",
-      "fromNode": "n_readme_consumer",
-      "toNode": "n_readme_error_channel",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_consumer_readme_panic_handling",
-      "fromNode": "n_readme_consumer",
-      "toNode": "n_readme_panic_handling",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_consumer_readme_concurrency",
-      "fromNode": "n_readme_consumer",
-      "toNode": "n_readme_concurrency",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_consumer_readme_batch_size",
-      "fromNode": "n_readme_consumer",
-      "toNode": "n_readme_batch_size",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_consumer_readme_multi_streams",
-      "fromNode": "n_readme_consumer",
-      "toNode": "n_readme_multi_streams",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_at_least_once_readme_visibility_timeout",
-      "fromNode": "n_readme_at_least_once",
-      "toNode": "n_readme_visibility_timeout",
-      "label": "conceptually_related_to [INFERRED]"
-    },
-    {
-      "id": "e_readme_visibility_timeout_readme_consumer_options",
-      "fromNode": "n_readme_visibility_timeout",
-      "toNode": "n_readme_consumer_options",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_stream_max_length_readme_producer_options",
-      "fromNode": "n_readme_stream_max_length",
-      "toNode": "n_readme_producer_options",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_concurrency_readme_consumer_options",
-      "fromNode": "n_readme_concurrency",
-      "toNode": "n_readme_consumer_options",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_readme_concurrency_readme_batch_size",
-      "fromNode": "n_readme_concurrency",
-      "toNode": "n_readme_batch_size",
+      "id": "e_changelog_v1_0_1_reclaim_fix_baseline_fr_delivery_clauses",
+      "fromNode": "n_changelog_v1_0_1_reclaim_fix",
+      "toNode": "n_baseline_fr_delivery_clauses",
       "label": "semantically_similar_to [INFERRED]"
     },
     {
-      "id": "e_readme_batch_size_readme_consumer_options",
-      "fromNode": "n_readme_batch_size",
-      "toNode": "n_readme_consumer_options",
-      "label": "shares_data_with [EXTRACTED]"
+      "id": "e_changelog_v1_0_0_readme_redisqueue_library",
+      "fromNode": "n_changelog_v1_0_0",
+      "toNode": "n_readme_redisqueue_library",
+      "label": "references [INFERRED]"
     },
     {
-      "id": "e_readme_producer_options_readme_new_producer_with_options",
-      "fromNode": "n_readme_producer_options",
-      "toNode": "n_readme_new_producer_with_options",
-      "label": "shares_data_with [EXTRACTED]"
+      "id": "e_claudemd_speckit_block_baseline_design_doc",
+      "fromNode": "n_claudemd_speckit_block",
+      "toNode": "n_baseline_design_doc",
+      "label": "references [INFERRED]"
     },
     {
-      "id": "e_readme_consumer_options_readme_new_consumer_with_options",
-      "fromNode": "n_readme_consumer_options",
-      "toNode": "n_readme_new_consumer_with_options",
-      "label": "shares_data_with [EXTRACTED]"
+      "id": "e_claudemd_graphify_rules_graphify_session_2026_05_06",
+      "fromNode": "n_claudemd_graphify_rules",
+      "toNode": "n_graphify_session_2026_05_06",
+      "label": "rationale_for [INFERRED]"
     },
     {
-      "id": "e_x_fork_branch_origin_main_branch_x_fork_branch_origin_master",
-      "fromNode": "n_x_fork_branch_origin_main_branch",
-      "toNode": "n_x_fork_branch_origin_master",
+      "id": "e_license_mit_robin_joseph_fork_robinjoseph08_redisqueue_upstream",
+      "fromNode": "n_license_mit_robin_joseph",
+      "toNode": "n_fork_robinjoseph08_redisqueue_upstream",
       "label": "references [EXTRACTED]"
     },
     {
-      "id": "e_x_fork_branch_origin_main_branch_x_fork_branch_origin_head_508101c",
-      "fromNode": "n_x_fork_branch_origin_main_branch",
-      "toNode": "n_x_fork_branch_origin_head_508101c",
+      "id": "e_readme_features_at_least_once_baseline_fr_delivery_clauses",
+      "fromNode": "n_readme_features_at_least_once",
+      "toNode": "n_baseline_fr_delivery_clauses",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_features_at_least_once_baseline_use_case_us2_consumer",
+      "fromNode": "n_readme_features_at_least_once",
+      "toNode": "n_baseline_use_case_us2_consumer",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_readme_features_visibility_timeout_baseline_fr_delivery_clauses",
+      "fromNode": "n_readme_features_visibility_timeout",
+      "toNode": "n_baseline_fr_delivery_clauses",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_features_signal_handling_baseline_fr_lifecycle_clauses",
+      "fromNode": "n_readme_features_signal_handling",
+      "toNode": "n_baseline_fr_lifecycle_clauses",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_features_panic_recovery_baseline_fr_lifecycle_clauses",
+      "fromNode": "n_readme_features_panic_recovery",
+      "toNode": "n_baseline_fr_lifecycle_clauses",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_module_path_v2_fork_robinjoseph08_redisqueue_upstream",
+      "fromNode": "n_readme_module_path_v2",
+      "toNode": "n_fork_robinjoseph08_redisqueue_upstream",
       "label": "references [EXTRACTED]"
     },
     {
-      "id": "e_x_fork_branch_origin_main_branch_x_fork_branch_origin_rationale_naming",
-      "fromNode": "n_x_fork_branch_origin_main_branch",
-      "toNode": "n_x_fork_branch_origin_rationale_naming",
+      "id": "e_readme_producer_example_tree_producer_go_role",
+      "fromNode": "n_readme_producer_example",
+      "toNode": "n_tree_producer_go_role",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_readme_consumer_example_tree_consumer_go_role",
+      "fromNode": "n_readme_consumer_example",
+      "toNode": "n_tree_consumer_go_role",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_branch_origin_main_2026_05_06_branch_origin_dual_branches",
+      "fromNode": "n_branch_origin_main_2026_05_06",
+      "toNode": "n_branch_origin_dual_branches",
       "label": "rationale_for [EXTRACTED]"
     },
     {
-      "id": "e_x_fork_branch_origin_repo_x_fork_branch_origin_upstream",
-      "fromNode": "n_x_fork_branch_origin_repo",
-      "toNode": "n_x_fork_branch_origin_upstream",
+      "id": "e_branch_origin_main_2026_05_06_tree_snapshot_2026_05_06",
+      "fromNode": "n_branch_origin_main_2026_05_06",
+      "toNode": "n_tree_snapshot_2026_05_06",
       "label": "references [EXTRACTED]"
     },
     {
-      "id": "e_x_fork_branch_origin_repo_x_fork_branch_origin_intermediate",
-      "fromNode": "n_x_fork_branch_origin_repo",
-      "toNode": "n_x_fork_branch_origin_intermediate",
+      "id": "e_fork_miso168net_redisqueue_fork_robinjoseph08_redisqueue_upstream",
+      "fromNode": "n_fork_miso168net_redisqueue",
+      "toNode": "n_fork_robinjoseph08_redisqueue_upstream",
       "label": "references [EXTRACTED]"
     },
     {
-      "id": "e_x_fork_branch_origin_upstream_x_fork_branch_origin_intermediate",
-      "fromNode": "n_x_fork_branch_origin_upstream",
-      "toNode": "n_x_fork_branch_origin_intermediate",
+      "id": "e_fork_miso168net_redisqueue_fork_go_admin_team_redisqueue_intermediate",
+      "fromNode": "n_fork_miso168net_redisqueue",
+      "toNode": "n_fork_go_admin_team_redisqueue_intermediate",
       "label": "references [EXTRACTED]"
     },
     {
-      "id": "e_x_fork_branch_origin_master_x_fork_branch_origin_rationale_history",
-      "fromNode": "n_x_fork_branch_origin_master",
-      "toNode": "n_x_fork_branch_origin_rationale_history",
+      "id": "e_fork_miso168net_redisqueue_graphify_fork_chain_conclusion",
+      "fromNode": "n_fork_miso168net_redisqueue",
+      "toNode": "n_graphify_fork_chain_conclusion",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_fork_robinjoseph08_redisqueue_upstream_fork_go_admin_team_redisqueue_intermediate",
+      "fromNode": "n_fork_robinjoseph08_redisqueue_upstream",
+      "toNode": "n_fork_go_admin_team_redisqueue_intermediate",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_fork_robinjoseph08_redisqueue_upstream_graphify_fork_chain_conclusion",
+      "fromNode": "n_fork_robinjoseph08_redisqueue_upstream",
+      "toNode": "n_graphify_fork_chain_conclusion",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_fork_go_admin_team_redisqueue_intermediate_graphify_fork_chain_conclusion",
+      "fromNode": "n_fork_go_admin_team_redisqueue_intermediate",
+      "toNode": "n_graphify_fork_chain_conclusion",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_session_2026_05_06_graphify_pipeline_summary",
+      "fromNode": "n_graphify_session_2026_05_06",
+      "toNode": "n_graphify_pipeline_summary",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_session_2026_05_06_graphify_god_node_consumer",
+      "fromNode": "n_graphify_session_2026_05_06",
+      "toNode": "n_graphify_god_node_consumer",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_session_2026_05_06_graphify_god_node_newredisclient",
+      "fromNode": "n_graphify_session_2026_05_06",
+      "toNode": "n_graphify_god_node_newredisclient",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_session_2026_05_06_graphify_god_node_newproducerwithoptions",
+      "fromNode": "n_graphify_session_2026_05_06",
+      "toNode": "n_graphify_god_node_newproducerwithoptions",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_session_2026_05_06_graphify_god_node_testrun",
+      "fromNode": "n_graphify_session_2026_05_06",
+      "toNode": "n_graphify_god_node_testrun",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_session_2026_05_06_graphify_fork_chain_conclusion",
+      "fromNode": "n_graphify_session_2026_05_06",
+      "toNode": "n_graphify_fork_chain_conclusion",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_session_2026_05_06_graphify_ambiguous_to_extracted_upgrade",
+      "fromNode": "n_graphify_session_2026_05_06",
+      "toNode": "n_graphify_ambiguous_to_extracted_upgrade",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_session_2026_05_06_graphify_pr_1_merge",
+      "fromNode": "n_graphify_session_2026_05_06",
+      "toNode": "n_graphify_pr_1_merge",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_session_2026_05_06_tree_snapshot_2026_05_06",
+      "fromNode": "n_graphify_session_2026_05_06",
+      "toNode": "n_tree_snapshot_2026_05_06",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_session_2026_05_06_baseline_design_doc",
+      "fromNode": "n_graphify_session_2026_05_06",
+      "toNode": "n_baseline_design_doc",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_graphify_god_node_consumer_tree_consumer_go_role",
+      "fromNode": "n_graphify_god_node_consumer",
+      "toNode": "n_tree_consumer_go_role",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_graphify_god_node_newredisclient_tree_redis_go_role",
+      "fromNode": "n_graphify_god_node_newredisclient",
+      "toNode": "n_tree_redis_go_role",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_graphify_god_node_newproducerwithoptions_tree_producer_go_role",
+      "fromNode": "n_graphify_god_node_newproducerwithoptions",
+      "toNode": "n_tree_producer_go_role",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_tree_consumer_go_role_tree_redis_go_role",
+      "fromNode": "n_tree_consumer_go_role",
+      "toNode": "n_tree_redis_go_role",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_tree_consumer_go_role_tree_signals_go_role",
+      "fromNode": "n_tree_consumer_go_role",
+      "toNode": "n_tree_signals_go_role",
+      "label": "calls [INFERRED]"
+    },
+    {
+      "id": "e_tree_consumer_go_role_tree_message_go_role",
+      "fromNode": "n_tree_consumer_go_role",
+      "toNode": "n_tree_message_go_role",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_tree_producer_go_role_tree_redis_go_role",
+      "fromNode": "n_tree_producer_go_role",
+      "toNode": "n_tree_redis_go_role",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tree_producer_go_role_tree_message_go_role",
+      "fromNode": "n_tree_producer_go_role",
+      "toNode": "n_tree_message_go_role",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_tree_no_options_go_convention_tree_module_path_upgrade_strategy",
+      "fromNode": "n_tree_no_options_go_convention",
+      "toNode": "n_tree_module_path_upgrade_strategy",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_anchor_commit_db9f9f9",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_anchor_commit_db9f9f9",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_goal_freeze_contract",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_goal_freeze_contract",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_coverage_depth_c",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_coverage_depth_c",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_layer_tag_design",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_layer_tag_design",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_constitution_principle_ii_api_stability",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_constitution_principle_ii_api_stability",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_fr_producer_clauses",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_fr_producer_clauses",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_fr_consumer_clauses",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_fr_consumer_clauses",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_fr_delivery_clauses",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_fr_delivery_clauses",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_fr_lifecycle_clauses",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_fr_lifecycle_clauses",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_fr_errors_clauses",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_fr_errors_clauses",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_fr_internal_clauses",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_fr_internal_clauses",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_use_case_us1_producer",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_use_case_us1_producer",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_use_case_us2_consumer",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_use_case_us2_consumer",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_use_case_us3_resilience",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_use_case_us3_resilience",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_use_case_us4_multistream",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_use_case_us4_multistream",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_sc_004_traceability_matrix",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_sc_004_traceability_matrix",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_gap_report_appendix",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_gap_report_appendix",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_design_doc_baseline_next_step_writing_plans",
+      "fromNode": "n_baseline_design_doc",
+      "toNode": "n_baseline_next_step_writing_plans",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_constitution_principle_ii_api_stability_baseline_layer_tag_design",
+      "fromNode": "n_constitution_principle_ii_api_stability",
+      "toNode": "n_baseline_layer_tag_design",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_fr_producer_clauses_baseline_use_case_us1_producer",
+      "fromNode": "n_baseline_fr_producer_clauses",
+      "toNode": "n_baseline_use_case_us1_producer",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_fr_consumer_clauses_baseline_use_case_us4_multistream",
+      "fromNode": "n_baseline_fr_consumer_clauses",
+      "toNode": "n_baseline_use_case_us4_multistream",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_fr_delivery_clauses_baseline_use_case_us2_consumer",
+      "fromNode": "n_baseline_fr_delivery_clauses",
+      "toNode": "n_baseline_use_case_us2_consumer",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_fr_lifecycle_clauses_baseline_use_case_us3_resilience",
+      "fromNode": "n_baseline_fr_lifecycle_clauses",
+      "toNode": "n_baseline_use_case_us3_resilience",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_baseline_sc_004_traceability_matrix_baseline_gap_report_appendix",
+      "fromNode": "n_baseline_sc_004_traceability_matrix",
+      "toNode": "n_baseline_gap_report_appendix",
       "label": "rationale_for [EXTRACTED]"
     }
   ]

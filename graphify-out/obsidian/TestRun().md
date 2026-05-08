@@ -1,18 +1,17 @@
 ---
 source_file: "consumer_test.go"
 type: "code"
-community: "Producer Implementation"
+community: "Producer and Redis Client"
 location: "L131"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Producer_Implementation
+  - community/Producer_and_Redis_Client
 ---
 
 # TestRun()
 
 ## Connections
-- [[.Enqueue()]] - `calls` [INFERRED]
 - [[.Register()]] - `calls` [INFERRED]
 - [[.Run()]] - `calls` [INFERRED]
 - [[.Shutdown()]] - `calls` [INFERRED]
@@ -22,4 +21,4 @@ tags:
 - [[NewProducerWithOptions()]] - `calls` [INFERRED]
 - [[consumer_test.go]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Producer_Implementation
+#graphify/code #graphify/INFERRED #community/Producer_and_Redis_Client

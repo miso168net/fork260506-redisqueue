@@ -1,12 +1,12 @@
 ---
 source_file: "redis.go"
 type: "code"
-community: "Redis Client Layer"
+community: "Producer and Redis Client"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Redis_Client_Layer
+  - community/Producer_and_Redis_Client
 ---
 
 # redisPreflightChecks()
@@ -17,4 +17,4 @@ tags:
 - [[TestRedisPreflightChecks()]] - `calls` [INFERRED]
 - [[redis.go]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Redis_Client_Layer
+#graphify/code #graphify/INFERRED #community/Producer_and_Redis_Client

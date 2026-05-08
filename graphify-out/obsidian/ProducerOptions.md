@@ -1,12 +1,12 @@
 ---
 source_file: "producer.go"
 type: "code"
-community: "Producer Implementation"
+community: "Producer and Redis Client"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Producer_Implementation
+  - community/Producer_and_Redis_Client
 ---
 
 # ProducerOptions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[producer.go]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Producer_Implementation
+#graphify/code #graphify/EXTRACTED #community/Producer_and_Redis_Client

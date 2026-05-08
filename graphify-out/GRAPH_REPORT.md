@@ -1,147 +1,106 @@
-# Graph Report - .  (2026-05-06)
+# Graph Report - .  (2026-05-08)
 
 ## Corpus Check
-- 15 files · ~5,520 words
-- Verdict: corpus is large enough that graph structure adds value.
+- Corpus is ~8,258 words - fits in a single context window. You may not need a graph.
 
 ## Summary
-- 88 nodes · 131 edges · 14 communities detected
-- Extraction: 62% EXTRACTED · 38% INFERRED · 0% AMBIGUOUS · INFERRED: 50 edges (avg confidence: 0.81)
-- Token cost: 0 input · 0 output
+- 105 nodes · 149 edges · 15 communities (9 shown, 6 thin omitted)
+- Extraction: 66% EXTRACTED · 34% INFERRED · 0% AMBIGUOUS · INFERRED: 51 edges (avg confidence: 0.82)
+- Token cost: 48,000 input · 2,700 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_License and Initial Release|License and Initial Release]]
-- [[_COMMUNITY_Consumer Configuration|Consumer Configuration]]
-- [[_COMMUNITY_Consumer Lifecycle|Consumer Lifecycle]]
+- [[_COMMUNITY_Baseline Spec Design|Baseline Spec Design]]
+- [[_COMMUNITY_Fork Meta and Graphify Session|Fork Meta and Graphify Session]]
+- [[_COMMUNITY_Consumer Internals and Tests|Consumer Internals and Tests]]
+- [[_COMMUNITY_Producer and Redis Client|Producer and Redis Client]]
 - [[_COMMUNITY_Consumer Registration|Consumer Registration]]
-- [[_COMMUNITY_Producer Implementation|Producer Implementation]]
-- [[_COMMUNITY_Redis Client Layer|Redis Client Layer]]
-- [[_COMMUNITY_Fork Branch Strategy|Fork Branch Strategy]]
-- [[_COMMUNITY_v2 Module Upgrade|v2 Module Upgrade]]
+- [[_COMMUNITY_Fork Chain and Module Identity|Fork Chain and Module Identity]]
+- [[_COMMUNITY_At-Least-Once Delivery|At-Least-Once Delivery]]
 - [[_COMMUNITY_Message Type|Message Type]]
-- [[_COMMUNITY_Universal Client Support|Universal Client Support]]
-- [[_COMMUNITY_Reclaim ID Fix|Reclaim ID Fix]]
-- [[_COMMUNITY_Package Doc|Package Doc]]
-- [[_COMMUNITY_Build Tools|Build Tools]]
-- [[_COMMUNITY_Release v1.1.0|Release v1.1.0]]
+- [[_COMMUNITY_Library Origin (v1.0.0)|Library Origin (v1.0.0)]]
+- [[_COMMUNITY_Versioning Strategy|Versioning Strategy]]
+- [[_COMMUNITY_Release v2.1.0|Release v2.1.0]]
+- [[_COMMUNITY_Build Tools Idiom|Build Tools Idiom]]
+- [[_COMMUNITY_Coverage Gate|Coverage Gate]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Consumer` - 14 edges
-2. `Consumer` - 10 edges
-3. `TestRun()` - 9 edges
-4. `NewProducerWithOptions()` - 7 edges
-5. `newRedisClient()` - 7 edges
-6. `NewConsumer()` - 6 edges
-7. `NewConsumerWithOptions()` - 6 edges
-8. `Producer` - 6 edges
-9. `redisqueue (project)` - 5 edges
-10. `TestNewConsumerWithOptions()` - 4 edges
+1. `Baseline Spec Design Document (2026-05-07)` - 20 edges
+2. `graphify session 2026-05-06 (/graphify . --obsidian)` - 11 edges
+3. `Consumer` - 10 edges
+4. `TestRun()` - 8 edges
+5. `NewProducerWithOptions()` - 7 edges
+6. `newRedisClient()` - 7 edges
+7. `NewConsumer()` - 6 edges
+8. `NewConsumerWithOptions()` - 6 edges
+9. `robinjoseph08/redisqueue (upstream original)` - 5 edges
+10. `consumer.go role (Consumer + Register + Run + reclaim/scheduler/panic recovery)` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `TestRun()` --calls--> `NewConsumer()`  [INFERRED]
-  consumer_test.go → consumer.go
-- `TestRun()` --calls--> `NewConsumerWithOptions()`  [INFERRED]
-  consumer_test.go → consumer.go
-- `NewProducerWithOptions()` --calls--> `newRedisClient()`  [INFERRED]
-  producer.go → redis.go
-- `NewProducerWithOptions()` --calls--> `redisPreflightChecks()`  [INFERRED]
-  producer.go → redis.go
-- `TestNewProducerWithOptions()` --calls--> `newRedisClient()`  [INFERRED]
-  producer_test.go → redis.go
+- `redisqueue v1.0.1 reclaim ID increment fix` --semantically_similar_to--> `FR-Delivery-* clause group (at-least-once, claim/ack, visibility timeout)`  [INFERRED] [semantically similar]
+  CHANGELOG.md → docs/superpowers/specs/2026-05-07-baseline-design.md
+- `at-least-once delivery feature (claim/ack)` --semantically_similar_to--> `US2: Consumer at-least-once processing`  [INFERRED] [semantically similar]
+  README.md → docs/superpowers/specs/2026-05-07-baseline-design.md
+- `NewConsumer()` --calls--> `TestRun()`  [INFERRED]
+  consumer.go → consumer_test.go
+- `NewProducer()` --calls--> `TestNewProducer()`  [INFERRED]
+  producer.go → producer_test.go
+- `NewProducerWithOptions()` --calls--> `TestNewProducerWithOptions()`  [INFERRED]
+  producer.go → producer_test.go
 
 ## Hyperedges (group relationships)
-- **At-least-once delivery pipeline** — readme_consumer, readme_at_least_once, readme_visibility_timeout, readme_signal_handling [INFERRED 0.85]
-- **Consumer tuning knobs** — readme_consumer_options, readme_visibility_timeout, readme_concurrency, readme_batch_size [EXTRACTED 1.00]
-- **Fork lineage chain** — x_fork_branch_origin_repo, x_fork_branch_origin_intermediate, x_fork_branch_origin_upstream, x_fork_branch_origin_main_branch [INFERRED 0.75]
+- **Fork chain: upstream -> intermediate -> personal fork** — fork_robinjoseph08_redisqueue_upstream, fork_go_admin_team_redisqueue_intermediate, fork_miso168net_redisqueue [EXTRACTED 1.00]
+- **Consumer resilience triad (signals + panic recovery + at-least-once)** — readme_features_signal_handling, readme_features_panic_recovery, readme_features_at_least_once, baseline_use_case_us3_resilience [EXTRACTED 0.95]
+- **Layer tag workflow ([Contract]/[Snapshot] + Constitution Principle II + traceability matrix)** — baseline_layer_tag_design, constitution_principle_ii_api_stability, baseline_sc_004_traceability_matrix, baseline_gap_report_appendix [EXTRACTED 0.95]
 
-## Communities
+## Communities (15 total, 6 thin omitted)
 
-### Community 0 - "License and Initial Release"
-Cohesion: 0.16
-Nodes (15): First version of producer and consumer, v1.0.0 (2019-07-13), MIT License, Robin Joseph (Copyright 2019), Producer.Enqueue, Message struct, NewProducerWithOptions, Producer (+7 more)
+### Community 0 - "Baseline Spec Design"
+Cohesion: 0.13
+Nodes (20): anchor commit db9f9f9 (constitution v1.0.0 ratified), coverage depth C (public API + behavior + internal snapshot), Baseline Spec Design Document (2026-05-07), FR-Consumer-* clause group, FR-Errors-* clause group (Errors channel, validation, preflight), FR-Internal-* clause group (newRedisClient, redisPreflightChecks, etc.), FR-Lifecycle-* clause group (signals, shutdown, panic recovery), FR-Producer-* clause group (+12 more)
 
-### Community 1 - "Consumer Configuration"
+### Community 1 - "Fork Meta and Graphify Session"
+Cohesion: 0.12
+Nodes (19): main+master dual long-lived branches strategy, main branch created 2026-05-06 from master, graphify rules for project (read GRAPH_REPORT before architecture, run graphify update after edits), AMBIGUOUS edges upgraded to EXTRACTED via graph.json patch, god node Consumer (14 edges), god node NewProducerWithOptions() (7 edges), god node newRedisClient() (7 edges, cross-community bridge), god node TestRun() (9 edges) (+11 more)
+
+### Community 2 - "Consumer Internals and Tests"
+Cohesion: 0.18
+Nodes (7): Consumer, TestEnqueue(), TestNewProducer(), TestNewProducerWithOptions(), incrementMessageID(), newSignalHandler(), TestNewSignalHandler()
+
+### Community 3 - "Producer and Redis Client"
 Cohesion: 0.22
-Nodes (13): At-least-once delivery (claim/ack), Batch size (BufferSize), Concurrency setting, Consumer, ConsumerOptions, Errors channel, Multiple streams support, NewConsumerWithOptions (+5 more)
+Nodes (11): NewConsumerWithOptions(), TestNewConsumerWithOptions(), TestRun(), NewProducer(), NewProducerWithOptions(), Producer, ProducerOptions, newRedisClient() (+3 more)
 
-### Community 2 - "Consumer Lifecycle"
-Cohesion: 0.29
-Nodes (3): Consumer, newSignalHandler(), TestNewSignalHandler()
-
-### Community 3 - "Consumer Registration"
+### Community 4 - "Consumer Registration"
 Cohesion: 0.24
 Nodes (7): ConsumerFunc, ConsumerOptions, NewConsumer(), registeredConsumer, TestNewConsumer(), TestRegister(), TestRegisterWithLastID()
 
-### Community 4 - "Producer Implementation"
-Cohesion: 0.29
-Nodes (8): TestRun(), NewProducer(), NewProducerWithOptions(), Producer, ProducerOptions, TestEnqueue(), TestNewProducer(), TestNewProducerWithOptions()
+### Community 5 - "Fork Chain and Module Identity"
+Cohesion: 0.43
+Nodes (7): redisqueue v2.0.0 release (go-redis/v7, /v2 module path), go-admin-team/redisqueue (intermediate fork), miso168net/fork260506-redisqueue (this repo), robinjoseph08/redisqueue (upstream original), fork chain robinjoseph08 -> go-admin-team -> miso168net, MIT License (Robin Joseph 2019), module path github.com/robinjoseph08/redisqueue/v2
 
-### Community 5 - "Redis Client Layer"
-Cohesion: 0.33
-Nodes (7): NewConsumerWithOptions(), TestNewConsumerWithOptions(), incrementMessageID(), newRedisClient(), redisPreflightChecks(), TestNewRedisClient(), TestRedisPreflightChecks()
-
-### Community 6 - "Fork Branch Strategy"
-Cohesion: 0.4
-Nodes (5): HEAD 508101c (Go 1.20 upgrade), main branch (fork), master branch, Rationale: preserve master without rewriting history, Rationale: unify default branch name to main
-
-### Community 7 - "v2 Module Upgrade"
-Cohesion: 0.67
-Nodes (3): go-redis/v7 + redisqueue/v2 upgrade, v2.0.0 (2020-05-26), github.com/robinjoseph08/redisqueue/v2 module
-
-### Community 8 - "Message Type"
-Cohesion: 1.0
-Nodes (1): Message
-
-### Community 9 - "Universal Client Support"
-Cohesion: 1.0
-Nodes (2): redis.UniversalClient support, v2.1.0 (2020-10-15)
-
-### Community 10 - "Reclaim ID Fix"
-Cohesion: 1.0
-Nodes (2): reclaim: increment ID when looping, v1.0.1 (2019-08-03)
-
-### Community 11 - "Package Doc"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 12 - "Build Tools"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 13 - "Release v1.1.0"
-Cohesion: 1.0
-Nodes (1): v1.1.0 (2020-05-26)
+### Community 6 - "At-Least-Once Delivery"
+Cohesion: 0.5
+Nodes (5): FR-Delivery-* clause group (at-least-once, claim/ack, visibility timeout), US2: Consumer at-least-once processing, redisqueue v1.0.1 reclaim ID increment fix, at-least-once delivery feature (claim/ack), visibility timeout feature
 
 ## Knowledge Gaps
-- **23 isolated node(s):** `ConsumerFunc`, `registeredConsumer`, `ConsumerOptions`, `Message`, `ProducerOptions` (+18 more)
+- **34 isolated node(s):** `ConsumerFunc`, `registeredConsumer`, `ConsumerOptions`, `Message`, `ProducerOptions` (+29 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Message Type`** (2 nodes): `message.go`, `Message`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Universal Client Support`** (2 nodes): `redis.UniversalClient support`, `v2.1.0 (2020-10-15)`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Reclaim ID Fix`** (2 nodes): `reclaim: increment ID when looping`, `v1.0.1 (2019-08-03)`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Package Doc`** (1 nodes): `doc.go`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Build Tools`** (1 nodes): `tools.go`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Release v1.1.0`** (1 nodes): `v1.1.0 (2020-05-26)`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Consumer` connect `Consumer Configuration` to `License and Initial Release`?**
-  _High betweenness centrality (0.066) - this node is a cross-community bridge._
-- **Why does `redisqueue (project)` connect `License and Initial Release` to `Consumer Configuration`?**
-  _High betweenness centrality (0.042) - this node is a cross-community bridge._
-- **Why does `Consumer` connect `Consumer Lifecycle` to `Consumer Registration`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
-- **Are the 2 inferred relationships involving `Consumer` (e.g. with `First version of producer and consumer` and `NewConsumerWithOptions`) actually correct?**
-  _`Consumer` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 8 inferred relationships involving `TestRun()` (e.g. with `NewConsumer()` and `NewConsumerWithOptions()`) actually correct?**
-  _`TestRun()` has 8 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `Baseline Spec Design Document (2026-05-07)` connect `Baseline Spec Design` to `Fork Meta and Graphify Session`, `At-Least-Once Delivery`?**
+  _High betweenness centrality (0.164) - this node is a cross-community bridge._
+- **Why does `graphify session 2026-05-06 (/graphify . --obsidian)` connect `Fork Meta and Graphify Session` to `Baseline Spec Design`, `Fork Chain and Module Identity`?**
+  _High betweenness centrality (0.161) - this node is a cross-community bridge._
+- **Why does `fork chain robinjoseph08 -> go-admin-team -> miso168net` connect `Fork Chain and Module Identity` to `Fork Meta and Graphify Session`?**
+  _High betweenness centrality (0.049) - this node is a cross-community bridge._
+- **Are the 7 inferred relationships involving `TestRun()` (e.g. with `NewConsumer()` and `NewConsumerWithOptions()`) actually correct?**
+  _`TestRun()` has 7 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 5 inferred relationships involving `NewProducerWithOptions()` (e.g. with `TestRun()` and `newRedisClient()`) actually correct?**
   _`NewProducerWithOptions()` has 5 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 6 inferred relationships involving `newRedisClient()` (e.g. with `NewConsumerWithOptions()` and `TestNewConsumerWithOptions()`) actually correct?**
-  _`newRedisClient()` has 6 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `ConsumerFunc`, `registeredConsumer`, `ConsumerOptions` to the rest of the system?**
+  _34 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Baseline Spec Design` be split into smaller, more focused modules?**
+  _Cohesion score 0.13 - nodes in this community are weakly interconnected._

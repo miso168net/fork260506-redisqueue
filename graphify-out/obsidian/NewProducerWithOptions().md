@@ -1,12 +1,12 @@
 ---
 source_file: "producer.go"
 type: "code"
-community: "Producer Implementation"
+community: "Producer and Redis Client"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Producer_Implementation
+  - community/Producer_and_Redis_Client
 ---
 
 # NewProducerWithOptions()
@@ -20,4 +20,4 @@ tags:
 - [[producer.go]] - `contains` [EXTRACTED]
 - [[redisPreflightChecks()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Producer_Implementation
+#graphify/code #graphify/INFERRED #community/Producer_and_Redis_Client

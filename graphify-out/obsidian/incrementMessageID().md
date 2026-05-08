@@ -1,12 +1,12 @@
 ---
 source_file: "redis.go"
 type: "code"
-community: "Redis Client Layer"
+community: "Consumer Internals and Tests"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Redis_Client_Layer
+  - community/Consumer_Internals_and_Tests
 ---
 
 # incrementMessageID()
@@ -15,4 +15,4 @@ tags:
 - [[.reclaim()]] - `calls` [INFERRED]
 - [[redis.go]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Redis_Client_Layer
+#graphify/code #graphify/INFERRED #community/Consumer_Internals_and_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "consumer.go"
 type: "code"
-community: "Consumer Lifecycle"
+community: "Consumer Internals and Tests"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Consumer_Lifecycle
+  - community/Consumer_Internals_and_Tests
 ---
 
 # Consumer
@@ -23,4 +23,4 @@ tags:
 - [[.work()]] - `method` [EXTRACTED]
 - [[consumer.go]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Consumer_Lifecycle
+#graphify/code #graphify/EXTRACTED #community/Consumer_Internals_and_Tests

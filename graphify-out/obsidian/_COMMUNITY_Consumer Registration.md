@@ -30,13 +30,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Consumer Lifecycle]]
-- 3 edges to [[_COMMUNITY_Redis Client Layer]]
-- 3 edges to [[_COMMUNITY_Producer Implementation]]
+- 6 edges to [[_COMMUNITY_Consumer Internals and Tests]]
+- 6 edges to [[_COMMUNITY_Producer and Redis Client]]
 
 ## Top bridge nodes
 - [[consumer.go]] - degree 6, connects to 2 communities
-- [[NewConsumer()]] - degree 6, connects to 2 communities
-- [[consumer_test.go]] - degree 5, connects to 2 communities
 - [[.Register()]] - degree 4, connects to 2 communities
+- [[NewConsumer()]] - degree 6, connects to 1 community
+- [[consumer_test.go]] - degree 5, connects to 1 community
 - [[TestRegister()]] - degree 4, connects to 1 community

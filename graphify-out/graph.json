@@ -4,46 +4,45 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "hyper_at_least_once_pipeline",
-        "label": "At-least-once delivery pipeline",
+        "id": "fork_chain_three_repos",
+        "label": "Fork chain: upstream -> intermediate -> personal fork",
         "nodes": [
-          "readme_consumer",
-          "readme_at_least_once",
-          "readme_visibility_timeout",
-          "readme_signal_handling"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "README.md"
-      },
-      {
-        "id": "hyper_consumer_tuning_options",
-        "label": "Consumer tuning knobs",
-        "nodes": [
-          "readme_consumer_options",
-          "readme_visibility_timeout",
-          "readme_concurrency",
-          "readme_batch_size"
+          "fork_robinjoseph08_redisqueue_upstream",
+          "fork_go_admin_team_redisqueue_intermediate",
+          "fork_miso168net_redisqueue"
         ],
         "relation": "form",
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
+        "source_file": "x_fork.branch-origin.md"
+      },
+      {
+        "id": "consumer_resilience_triad",
+        "label": "Consumer resilience triad (signals + panic recovery + at-least-once)",
+        "nodes": [
+          "readme_features_signal_handling",
+          "readme_features_panic_recovery",
+          "readme_features_at_least_once",
+          "baseline_use_case_us3_resilience"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
         "source_file": "README.md"
       },
       {
-        "id": "hyper_fork_lineage",
-        "label": "Fork lineage chain",
+        "id": "baseline_layer_tag_workflow",
+        "label": "Layer tag workflow ([Contract]/[Snapshot] + Constitution Principle II + traceability matrix)",
         "nodes": [
-          "x_fork_branch_origin_repo",
-          "x_fork_branch_origin_intermediate",
-          "x_fork_branch_origin_upstream",
-          "x_fork_branch_origin_main_branch"
+          "baseline_layer_tag_design",
+          "constitution_principle_ii_api_stability",
+          "baseline_sc_004_traceability_matrix",
+          "baseline_gap_report_appendix"
         ],
         "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.75,
-        "source_file": "x_fork.branch-origin.md"
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md"
       }
     ]
   },
@@ -53,956 +52,1177 @@
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L1",
-      "community": 3,
-      "norm_label": "consumer.go",
-      "id": "consumer_go"
+      "id": "consumer_go",
+      "community": 4,
+      "norm_label": "consumer.go"
     },
     {
       "label": "ConsumerFunc",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L16",
-      "community": 3,
-      "norm_label": "consumerfunc",
-      "id": "consumer_consumerfunc"
+      "id": "consumer_consumerfunc",
+      "community": 4,
+      "norm_label": "consumerfunc"
     },
     {
       "label": "registeredConsumer",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L18",
-      "community": 3,
-      "norm_label": "registeredconsumer",
-      "id": "consumer_registeredconsumer"
+      "id": "consumer_registeredconsumer",
+      "community": 4,
+      "norm_label": "registeredconsumer"
     },
     {
       "label": "ConsumerOptions",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L24",
-      "community": 3,
-      "norm_label": "consumeroptions",
-      "id": "consumer_consumeroptions"
+      "id": "consumer_consumeroptions",
+      "community": 4,
+      "norm_label": "consumeroptions"
     },
     {
       "label": "Consumer",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L69",
+      "id": "consumer_consumer",
       "community": 2,
-      "norm_label": "consumer",
-      "id": "consumer_consumer"
+      "norm_label": "consumer"
     },
     {
       "label": "NewConsumer()",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L102",
-      "community": 3,
-      "norm_label": "newconsumer()",
-      "id": "consumer_newconsumer"
+      "id": "consumer_newconsumer",
+      "community": 4,
+      "norm_label": "newconsumer()"
     },
     {
       "label": "NewConsumerWithOptions()",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L110",
-      "community": 5,
-      "norm_label": "newconsumerwithoptions()",
-      "id": "consumer_newconsumerwithoptions"
+      "id": "consumer_newconsumerwithoptions",
+      "community": 3,
+      "norm_label": "newconsumerwithoptions()"
     },
     {
       "label": ".RegisterWithLastID()",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L161",
-      "community": 3,
-      "norm_label": ".registerwithlastid()",
-      "id": "consumer_consumer_registerwithlastid"
+      "id": "consumer_consumer_registerwithlastid",
+      "community": 4,
+      "norm_label": ".registerwithlastid()"
     },
     {
       "label": ".Register()",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L176",
-      "community": 3,
-      "norm_label": ".register()",
-      "id": "consumer_consumer_register"
+      "id": "consumer_consumer_register",
+      "community": 4,
+      "norm_label": ".register()"
     },
     {
       "label": ".Run()",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L186",
+      "id": "consumer_consumer_run",
       "community": 2,
-      "norm_label": ".run()",
-      "id": "consumer_consumer_run"
+      "norm_label": ".run()"
     },
     {
       "label": ".Shutdown()",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L228",
+      "id": "consumer_consumer_shutdown",
       "community": 2,
-      "norm_label": ".shutdown()",
-      "id": "consumer_consumer_shutdown"
+      "norm_label": ".shutdown()"
     },
     {
       "label": ".reclaim()",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L241",
+      "id": "consumer_consumer_reclaim",
       "community": 2,
-      "norm_label": ".reclaim()",
-      "id": "consumer_consumer_reclaim"
+      "norm_label": ".reclaim()"
     },
     {
       "label": ".poll()",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L328",
+      "id": "consumer_consumer_poll",
       "community": 2,
-      "norm_label": ".poll()",
-      "id": "consumer_consumer_poll"
+      "norm_label": ".poll()"
     },
     {
       "label": ".enqueue()",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L366",
+      "id": "consumer_consumer_enqueue",
       "community": 2,
-      "norm_label": ".enqueue()",
-      "id": "consumer_consumer_enqueue"
+      "norm_label": ".enqueue()"
     },
     {
       "label": ".work()",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L382",
+      "id": "consumer_consumer_work",
       "community": 2,
-      "norm_label": ".work()",
-      "id": "consumer_consumer_work"
+      "norm_label": ".work()"
     },
     {
       "label": ".process()",
       "file_type": "code",
       "source_file": "consumer.go",
       "source_location": "L404",
+      "id": "consumer_consumer_process",
       "community": 2,
-      "norm_label": ".process()",
-      "id": "consumer_consumer_process"
+      "norm_label": ".process()"
     },
     {
       "label": "consumer_test.go",
       "file_type": "code",
       "source_file": "consumer_test.go",
       "source_location": "L1",
-      "community": 3,
-      "norm_label": "consumer_test.go",
-      "id": "consumer_test_go"
+      "id": "consumer_test_go",
+      "community": 4,
+      "norm_label": "consumer_test.go"
     },
     {
       "label": "TestNewConsumer()",
       "file_type": "code",
       "source_file": "consumer_test.go",
       "source_location": "L15",
-      "community": 3,
-      "norm_label": "testnewconsumer()",
-      "id": "consumer_test_testnewconsumer"
+      "id": "consumer_test_testnewconsumer",
+      "community": 4,
+      "norm_label": "testnewconsumer()"
     },
     {
       "label": "TestNewConsumerWithOptions()",
       "file_type": "code",
       "source_file": "consumer_test.go",
       "source_location": "L24",
-      "community": 5,
-      "norm_label": "testnewconsumerwithoptions()",
-      "id": "consumer_test_testnewconsumerwithoptions"
+      "id": "consumer_test_testnewconsumerwithoptions",
+      "community": 3,
+      "norm_label": "testnewconsumerwithoptions()"
     },
     {
       "label": "TestRegister()",
       "file_type": "code",
       "source_file": "consumer_test.go",
       "source_location": "L74",
-      "community": 3,
-      "norm_label": "testregister()",
-      "id": "consumer_test_testregister"
+      "id": "consumer_test_testregister",
+      "community": 4,
+      "norm_label": "testregister()"
     },
     {
       "label": "TestRegisterWithLastID()",
       "file_type": "code",
       "source_file": "consumer_test.go",
       "source_location": "L89",
-      "community": 3,
-      "norm_label": "testregisterwithlastid()",
-      "id": "consumer_test_testregisterwithlastid"
+      "id": "consumer_test_testregisterwithlastid",
+      "community": 4,
+      "norm_label": "testregisterwithlastid()"
     },
     {
       "label": "TestRun()",
       "file_type": "code",
       "source_file": "consumer_test.go",
       "source_location": "L131",
-      "community": 4,
-      "norm_label": "testrun()",
-      "id": "consumer_test_testrun"
+      "id": "consumer_test_testrun",
+      "community": 3,
+      "norm_label": "testrun()"
     },
     {
       "label": "doc.go",
       "file_type": "code",
       "source_file": "doc.go",
       "source_location": "L1",
-      "community": 11,
-      "norm_label": "doc.go",
-      "id": "doc_go"
+      "id": "doc_go",
+      "community": 10,
+      "norm_label": "doc.go"
     },
     {
       "label": "message.go",
       "file_type": "code",
       "source_file": "message.go",
       "source_location": "L1",
-      "community": 8,
-      "norm_label": "message.go",
-      "id": "message_go"
+      "id": "message_go",
+      "community": 7,
+      "norm_label": "message.go"
     },
     {
       "label": "Message",
       "file_type": "code",
       "source_file": "message.go",
       "source_location": "L6",
-      "community": 8,
-      "norm_label": "message",
-      "id": "message_message"
+      "id": "message_message",
+      "community": 7,
+      "norm_label": "message"
     },
     {
       "label": "producer.go",
       "file_type": "code",
       "source_file": "producer.go",
       "source_location": "L1",
-      "community": 4,
-      "norm_label": "producer.go",
-      "id": "producer_go"
+      "id": "producer_go",
+      "community": 3,
+      "norm_label": "producer.go"
     },
     {
       "label": "ProducerOptions",
       "file_type": "code",
       "source_file": "producer.go",
       "source_location": "L9",
-      "community": 4,
-      "norm_label": "produceroptions",
-      "id": "producer_produceroptions"
+      "id": "producer_produceroptions",
+      "community": 3,
+      "norm_label": "produceroptions"
     },
     {
       "label": "Producer",
       "file_type": "code",
       "source_file": "producer.go",
       "source_location": "L37",
-      "community": 4,
-      "norm_label": "producer",
-      "id": "producer_producer"
+      "id": "producer_producer",
+      "community": 3,
+      "norm_label": "producer"
     },
     {
       "label": "NewProducer()",
       "file_type": "code",
       "source_file": "producer.go",
       "source_location": "L50",
-      "community": 4,
-      "norm_label": "newproducer()",
-      "id": "producer_newproducer"
+      "id": "producer_newproducer",
+      "community": 3,
+      "norm_label": "newproducer()"
     },
     {
       "label": "NewProducerWithOptions()",
       "file_type": "code",
       "source_file": "producer.go",
       "source_location": "L55",
-      "community": 4,
-      "norm_label": "newproducerwithoptions()",
-      "id": "producer_newproducerwithoptions"
+      "id": "producer_newproducerwithoptions",
+      "community": 3,
+      "norm_label": "newproducerwithoptions()"
     },
     {
       "label": ".Enqueue()",
       "file_type": "code",
       "source_file": "producer.go",
       "source_location": "L78",
-      "community": 4,
-      "norm_label": ".enqueue()",
-      "id": "producer_producer_enqueue"
+      "id": "producer_producer_enqueue",
+      "community": 3,
+      "norm_label": ".enqueue()"
     },
     {
       "label": "producer_test.go",
       "file_type": "code",
       "source_file": "producer_test.go",
       "source_location": "L1",
-      "community": 4,
-      "norm_label": "producer_test.go",
-      "id": "producer_test_go"
+      "id": "producer_test_go",
+      "community": 2,
+      "norm_label": "producer_test.go"
     },
     {
       "label": "TestNewProducer()",
       "file_type": "code",
       "source_file": "producer_test.go",
       "source_location": "L11",
-      "community": 4,
-      "norm_label": "testnewproducer()",
-      "id": "producer_test_testnewproducer"
+      "id": "producer_test_testnewproducer",
+      "community": 2,
+      "norm_label": "testnewproducer()"
     },
     {
       "label": "TestNewProducerWithOptions()",
       "file_type": "code",
       "source_file": "producer_test.go",
       "source_location": "L20",
-      "community": 4,
-      "norm_label": "testnewproducerwithoptions()",
-      "id": "producer_test_testnewproducerwithoptions"
+      "id": "producer_test_testnewproducerwithoptions",
+      "community": 2,
+      "norm_label": "testnewproducerwithoptions()"
     },
     {
       "label": "TestEnqueue()",
       "file_type": "code",
       "source_file": "producer_test.go",
       "source_location": "L50",
-      "community": 4,
-      "norm_label": "testenqueue()",
-      "id": "producer_test_testenqueue"
+      "id": "producer_test_testenqueue",
+      "community": 2,
+      "norm_label": "testenqueue()"
     },
     {
       "label": "redis.go",
       "file_type": "code",
       "source_file": "redis.go",
       "source_location": "L1",
-      "community": 5,
-      "norm_label": "redis.go",
-      "id": "redis_go"
+      "id": "redis_go",
+      "community": 2,
+      "norm_label": "redis.go"
     },
     {
       "label": "newRedisClient()",
       "file_type": "code",
       "source_file": "redis.go",
       "source_location": "L22",
-      "community": 5,
-      "norm_label": "newredisclient()",
-      "id": "redis_newredisclient"
+      "id": "redis_newredisclient",
+      "community": 3,
+      "norm_label": "newredisclient()"
     },
     {
       "label": "redisPreflightChecks()",
       "file_type": "code",
       "source_file": "redis.go",
       "source_location": "L33",
-      "community": 5,
-      "norm_label": "redispreflightchecks()",
-      "id": "redis_redispreflightchecks"
+      "id": "redis_redispreflightchecks",
+      "community": 3,
+      "norm_label": "redispreflightchecks()"
     },
     {
       "label": "incrementMessageID()",
       "file_type": "code",
       "source_file": "redis.go",
       "source_location": "L59",
-      "community": 5,
-      "norm_label": "incrementmessageid()",
-      "id": "redis_incrementmessageid"
+      "id": "redis_incrementmessageid",
+      "community": 2,
+      "norm_label": "incrementmessageid()"
     },
     {
       "label": "redis_test.go",
       "file_type": "code",
       "source_file": "redis_test.go",
       "source_location": "L1",
-      "community": 5,
-      "norm_label": "redis_test.go",
-      "id": "redis_test_go"
+      "id": "redis_test_go",
+      "community": 3,
+      "norm_label": "redis_test.go"
     },
     {
       "label": "TestNewRedisClient()",
       "file_type": "code",
       "source_file": "redis_test.go",
       "source_location": "L11",
-      "community": 5,
-      "norm_label": "testnewredisclient()",
-      "id": "redis_test_testnewredisclient"
+      "id": "redis_test_testnewredisclient",
+      "community": 3,
+      "norm_label": "testnewredisclient()"
     },
     {
       "label": "TestRedisPreflightChecks()",
       "file_type": "code",
       "source_file": "redis_test.go",
       "source_location": "L28",
-      "community": 5,
-      "norm_label": "testredispreflightchecks()",
-      "id": "redis_test_testredispreflightchecks"
+      "id": "redis_test_testredispreflightchecks",
+      "community": 3,
+      "norm_label": "testredispreflightchecks()"
     },
     {
       "label": "signals.go",
       "file_type": "code",
       "source_file": "signals.go",
       "source_location": "L1",
+      "id": "signals_go",
       "community": 2,
-      "norm_label": "signals.go",
-      "id": "signals_go"
+      "norm_label": "signals.go"
     },
     {
       "label": "newSignalHandler()",
       "file_type": "code",
       "source_file": "signals.go",
       "source_location": "L12",
+      "id": "signals_newsignalhandler",
       "community": 2,
-      "norm_label": "newsignalhandler()",
-      "id": "signals_newsignalhandler"
+      "norm_label": "newsignalhandler()"
     },
     {
       "label": "signals_test.go",
       "file_type": "code",
       "source_file": "signals_test.go",
       "source_location": "L1",
+      "id": "signals_test_go",
       "community": 2,
-      "norm_label": "signals_test.go",
-      "id": "signals_test_go"
+      "norm_label": "signals_test.go"
     },
     {
       "label": "TestNewSignalHandler()",
       "file_type": "code",
       "source_file": "signals_test.go",
       "source_location": "L11",
+      "id": "signals_test_testnewsignalhandler",
       "community": 2,
-      "norm_label": "testnewsignalhandler()",
-      "id": "signals_test_testnewsignalhandler"
+      "norm_label": "testnewsignalhandler()"
     },
     {
       "label": "tools.go",
       "file_type": "code",
       "source_file": "tools.go",
       "source_location": "L1",
+      "id": "tools_go",
+      "community": 11,
+      "norm_label": "tools.go"
+    },
+    {
+      "label": "redisqueue v2.1.0 release",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L2-7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "changelog_v2_1_0",
       "community": 12,
-      "norm_label": "tools.go",
-      "id": "tools_go"
+      "norm_label": "redisqueue v2.1.0 release"
     },
     {
-      "label": "v2.1.0 (2020-10-15)",
+      "label": "redisqueue v2.0.0 release (go-redis/v7, /v2 module path)",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "lines 2-7",
+      "source_location": "L10-15",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
-      "norm_label": "v2.1.0 (2020-10-15)",
-      "id": "changelog_v210"
+      "id": "changelog_v2_0_0",
+      "community": 5,
+      "norm_label": "redisqueue v2.0.0 release (go-redis/v7, /v2 module path)"
     },
     {
-      "label": "v2.0.0 (2020-05-26)",
+      "label": "redisqueue v1.0.1 reclaim ID increment fix",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "lines 10-15",
+      "source_location": "L26-31",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "norm_label": "v2.0.0 (2020-05-26)",
-      "id": "changelog_v200"
+      "id": "changelog_v1_0_1_reclaim_fix",
+      "community": 6,
+      "norm_label": "redisqueue v1.0.1 reclaim id increment fix"
     },
     {
-      "label": "v1.1.0 (2020-05-26)",
+      "label": "redisqueue v1.0.0 first Producer/Consumer release",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "lines 18-23",
+      "source_location": "L34-43",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "changelog_v1_0_0",
+      "community": 8,
+      "norm_label": "redisqueue v1.0.0 first producer/consumer release"
+    },
+    {
+      "label": "SPECKIT block in CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1-4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claudemd_speckit_block",
+      "community": 0,
+      "norm_label": "speckit block in claude.md"
+    },
+    {
+      "label": "graphify rules for project (read GRAPH_REPORT before architecture, run graphify update after edits)",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "L6-13",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claudemd_graphify_rules",
+      "community": 1,
+      "norm_label": "graphify rules for project (read graph_report before architecture, run graphify update after edits)"
+    },
+    {
+      "label": "MIT License (Robin Joseph 2019)",
+      "file_type": "document",
+      "source_file": "LICENSE.txt",
+      "source_location": "L1-21",
+      "source_url": null,
+      "captured_at": null,
+      "author": "Robin Joseph",
+      "contributor": null,
+      "id": "license_mit_robin_joseph",
+      "community": 5,
+      "norm_label": "mit license (robin joseph 2019)"
+    },
+    {
+      "label": "redisqueue library overview (Producer/Consumer over Redis Streams)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1-11",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_redisqueue_library",
+      "community": 8,
+      "norm_label": "redisqueue library overview (producer/consumer over redis streams)"
+    },
+    {
+      "label": "at-least-once delivery feature (claim/ack)",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "source_location": "L17-19",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_features_at_least_once",
+      "community": 6,
+      "norm_label": "at-least-once delivery feature (claim/ack)"
+    },
+    {
+      "label": "visibility timeout feature",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "source_location": "L20-21",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_features_visibility_timeout",
+      "community": 6,
+      "norm_label": "visibility timeout feature"
+    },
+    {
+      "label": "graceful SIGINT/SIGTERM handling feature",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "source_location": "L24-25",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_features_signal_handling",
+      "community": 0,
+      "norm_label": "graceful sigint/sigterm handling feature"
+    },
+    {
+      "label": "graceful panic recovery feature",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_features_panic_recovery",
+      "community": 0,
+      "norm_label": "graceful panic recovery feature"
+    },
+    {
+      "label": "module path github.com/robinjoseph08/redisqueue/v2",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L41-47",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_module_path_v2",
+      "community": 5,
+      "norm_label": "module path github.com/robinjoseph08/redisqueue/v2"
+    },
+    {
+      "label": "README Producer example (NewProducerWithOptions / Enqueue)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L52-88",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_producer_example",
+      "community": 1,
+      "norm_label": "readme producer example (newproducerwithoptions / enqueue)"
+    },
+    {
+      "label": "README Consumer example (NewConsumerWithOptions / Register / Run)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L92-132",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_consumer_example",
+      "community": 1,
+      "norm_label": "readme consumer example (newconsumerwithoptions / register / run)"
+    },
+    {
+      "label": "main branch created 2026-05-06 from master",
+      "file_type": "document",
+      "source_file": "x_fork.branch-origin.md",
+      "source_location": "L1-15",
+      "source_url": null,
+      "captured_at": "2026-05-06",
+      "author": null,
+      "contributor": null,
+      "id": "branch_origin_main_2026_05_06",
+      "community": 1,
+      "norm_label": "main branch created 2026-05-06 from master"
+    },
+    {
+      "label": "miso168net/fork260506-redisqueue (this repo)",
+      "file_type": "document",
+      "source_file": "x_fork.branch-origin.md",
+      "source_location": "L7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fork_miso168net_redisqueue",
+      "community": 5,
+      "norm_label": "miso168net/fork260506-redisqueue (this repo)"
+    },
+    {
+      "label": "robinjoseph08/redisqueue (upstream original)",
+      "file_type": "document",
+      "source_file": "x_fork.branch-origin.md",
+      "source_location": "L8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fork_robinjoseph08_redisqueue_upstream",
+      "community": 5,
+      "norm_label": "robinjoseph08/redisqueue (upstream original)"
+    },
+    {
+      "label": "go-admin-team/redisqueue (intermediate fork)",
+      "file_type": "document",
+      "source_file": "x_fork.branch-origin.md",
+      "source_location": "L9",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fork_go_admin_team_redisqueue_intermediate",
+      "community": 5,
+      "norm_label": "go-admin-team/redisqueue (intermediate fork)"
+    },
+    {
+      "label": "main+master dual long-lived branches strategy",
+      "file_type": "rationale",
+      "source_file": "x_fork.branch-origin.md",
+      "source_location": "L17-21",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "branch_origin_dual_branches",
+      "community": 1,
+      "norm_label": "main+master dual long-lived branches strategy"
+    },
+    {
+      "label": "graphify session 2026-05-06 (/graphify . --obsidian)",
+      "file_type": "document",
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L1-14",
+      "source_url": null,
+      "captured_at": "2026-05-06",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_session_2026_05_06",
+      "community": 1,
+      "norm_label": "graphify session 2026-05-06 (/graphify . --obsidian)"
+    },
+    {
+      "label": "graphify pipeline result (88 nodes / 131 edges / 14 communities)",
+      "file_type": "document",
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L17-25",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graphify_pipeline_summary",
+      "community": 1,
+      "norm_label": "graphify pipeline result (88 nodes / 131 edges / 14 communities)"
+    },
+    {
+      "label": "god node Consumer (14 edges)",
+      "file_type": "rationale",
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L46-50",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graphify_god_node_consumer",
+      "community": 1,
+      "norm_label": "god node consumer (14 edges)"
+    },
+    {
+      "label": "god node newRedisClient() (7 edges, cross-community bridge)",
+      "file_type": "rationale",
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L50",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graphify_god_node_newredisclient",
+      "community": 1,
+      "norm_label": "god node newredisclient() (7 edges, cross-community bridge)"
+    },
+    {
+      "label": "god node NewProducerWithOptions() (7 edges)",
+      "file_type": "rationale",
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L49",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graphify_god_node_newproducerwithoptions",
+      "community": 1,
+      "norm_label": "god node newproducerwithoptions() (7 edges)"
+    },
+    {
+      "label": "god node TestRun() (9 edges)",
+      "file_type": "rationale",
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L48",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graphify_god_node_testrun",
+      "community": 1,
+      "norm_label": "god node testrun() (9 edges)"
+    },
+    {
+      "label": "fork chain robinjoseph08 -> go-admin-team -> miso168net",
+      "file_type": "rationale",
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L82-92",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graphify_fork_chain_conclusion",
+      "community": 5,
+      "norm_label": "fork chain robinjoseph08 -> go-admin-team -> miso168net"
+    },
+    {
+      "label": "AMBIGUOUS edges upgraded to EXTRACTED via graph.json patch",
+      "file_type": "rationale",
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L94-104",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graphify_ambiguous_to_extracted_upgrade",
+      "community": 1,
+      "norm_label": "ambiguous edges upgraded to extracted via graph.json patch"
+    },
+    {
+      "label": "PR #1 graphify-20260506 fast-forward merge (commit 0865e0b)",
+      "file_type": "document",
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L107-117",
+      "source_url": null,
+      "captured_at": "2026-05-05T21:12:35Z",
+      "author": null,
+      "contributor": null,
+      "id": "graphify_pr_1_merge",
+      "community": 1,
+      "norm_label": "pr #1 graphify-20260506 fast-forward merge (commit 0865e0b)"
+    },
+    {
+      "label": "repo tree snapshot 2026-05-06 with per-file annotations",
+      "file_type": "document",
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L1-12",
+      "source_url": null,
+      "captured_at": "2026-05-06",
+      "author": null,
+      "contributor": null,
+      "id": "tree_snapshot_2026_05_06",
+      "community": 1,
+      "norm_label": "repo tree snapshot 2026-05-06 with per-file annotations"
+    },
+    {
+      "label": "consumer.go role (Consumer + Register + Run + reclaim/scheduler/panic recovery)",
+      "file_type": "document",
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L21",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tree_consumer_go_role",
+      "community": 1,
+      "norm_label": "consumer.go role (consumer + register + run + reclaim/scheduler/panic recovery)"
+    },
+    {
+      "label": "producer.go role (Producer + Enqueue, calls newRedisClient + redisPreflightChecks)",
+      "file_type": "document",
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L25",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tree_producer_go_role",
+      "community": 1,
+      "norm_label": "producer.go role (producer + enqueue, calls newredisclient + redispreflightchecks)"
+    },
+    {
+      "label": "redis.go role (newRedisClient / redisPreflightChecks / incrementMessageID)",
+      "file_type": "document",
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L27",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tree_redis_go_role",
+      "community": 1,
+      "norm_label": "redis.go role (newredisclient / redispreflightchecks / incrementmessageid)"
+    },
+    {
+      "label": "signals.go role (newSignalHandler for SIGINT/SIGTERM)",
+      "file_type": "document",
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L29",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tree_signals_go_role",
+      "community": 1,
+      "norm_label": "signals.go role (newsignalhandler for sigint/sigterm)"
+    },
+    {
+      "label": "message.go role (Message struct, only public value object)",
+      "file_type": "document",
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L24",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tree_message_go_role",
+      "community": 1,
+      "norm_label": "message.go role (message struct, only public value object)"
+    },
+    {
+      "label": "tools.go +build tools idiom (Go 1.13+ go.mod tool versioning)",
+      "file_type": "rationale",
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L31,L63-64",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tree_tools_go_idiom",
       "community": 13,
-      "norm_label": "v1.1.0 (2020-05-26)",
-      "id": "changelog_v110"
+      "norm_label": "tools.go +build tools idiom (go 1.13+ go.mod tool versioning)"
     },
     {
-      "label": "v1.0.1 (2019-08-03)",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "lines 26-31",
+      "label": "single struct + constructor variants convention (no options.go)",
+      "file_type": "rationale",
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L58-60",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
-      "norm_label": "v1.0.1 (2019-08-03)",
-      "id": "changelog_v101"
-    },
-    {
-      "label": "v1.0.0 (2019-07-13)",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "lines 34-43",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "v1.0.0 (2019-07-13)",
-      "id": "changelog_v100"
-    },
-    {
-      "label": "redis.UniversalClient support",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "line 7",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
+      "id": "tree_no_options_go_convention",
       "community": 9,
-      "norm_label": "redis.universalclient support",
-      "id": "changelog_redis_universalclient"
+      "norm_label": "single struct + constructor variants convention (no options.go)"
     },
     {
-      "label": "go-redis/v7 + redisqueue/v2 upgrade",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "line 15",
+      "label": "module path upgrade strategy (v1->v2 new path, no in-package alias)",
+      "file_type": "rationale",
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L61-62",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "norm_label": "go-redis/v7 + redisqueue/v2 upgrade",
-      "id": "changelog_goredis_v7"
+      "id": "tree_module_path_upgrade_strategy",
+      "community": 9,
+      "norm_label": "module path upgrade strategy (v1->v2 new path, no in-package alias)"
     },
     {
-      "label": "reclaim: increment ID when looping",
+      "label": "scripts/coverage.sh coverage>=80% gate",
       "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "line 31",
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L42-43",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
-      "norm_label": "reclaim: increment id when looping",
-      "id": "changelog_reclaim_fix"
+      "id": "tree_coverage_gate_script",
+      "community": 14,
+      "norm_label": "scripts/coverage.sh coverage>=80% gate"
     },
     {
-      "label": "First version of producer and consumer",
+      "label": "Baseline Spec Design Document (2026-05-07)",
       "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "line 43",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L1-8",
       "source_url": null,
-      "captured_at": null,
-      "author": null,
+      "captured_at": "2026-05-07",
+      "author": "brainstorming session (Claude Opus 4.7 + user)",
       "contributor": null,
+      "id": "baseline_design_doc",
       "community": 0,
-      "norm_label": "first version of producer and consumer",
-      "id": "changelog_first_producer_consumer"
+      "norm_label": "baseline spec design document (2026-05-07)"
     },
     {
-      "label": "MIT License",
+      "label": "anchor commit db9f9f9 (constitution v1.0.0 ratified)",
       "file_type": "document",
-      "source_file": "LICENSE.txt",
-      "source_location": "lines 1-21",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L5",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "baseline_anchor_commit_db9f9f9",
       "community": 0,
-      "norm_label": "mit license",
-      "id": "license_mit"
+      "norm_label": "anchor commit db9f9f9 (constitution v1.0.0 ratified)"
     },
     {
-      "label": "Robin Joseph (Copyright 2019)",
-      "file_type": "document",
-      "source_file": "LICENSE.txt",
-      "source_location": "line 3",
+      "label": "goal: freeze public contract + implementation as reference baseline",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L17-28",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "baseline_goal_freeze_contract",
       "community": 0,
-      "norm_label": "robin joseph (copyright 2019)",
-      "id": "license_robin_joseph"
+      "norm_label": "goal: freeze public contract + implementation as reference baseline"
     },
     {
-      "label": "redisqueue (project)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "line 1",
+      "label": "Constitution Principle II: Public API Stability",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L21-23,L97-99",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "constitution_principle_ii_api_stability",
       "community": 0,
-      "norm_label": "redisqueue (project)",
-      "id": "readme_redisqueue"
+      "norm_label": "constitution principle ii: public api stability"
     },
     {
-      "label": "Redis Streams",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "lines 10-11",
+      "label": "coverage depth C (public API + behavior + internal snapshot)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L34-35",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "baseline_coverage_depth_c",
       "community": 0,
-      "norm_label": "redis streams",
-      "id": "readme_redis_streams"
+      "norm_label": "coverage depth c (public api + behavior + internal snapshot)"
     },
     {
-      "label": "Producer",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "line 15",
+      "label": "layer tag design [Contract] vs [Snapshot]",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L78-99,L167-181",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "baseline_layer_tag_design",
       "community": 0,
-      "norm_label": "producer",
-      "id": "readme_producer"
+      "norm_label": "layer tag design [contract] vs [snapshot]"
     },
     {
-      "label": "Consumer",
+      "label": "FR-Producer-* clause group",
       "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "line 16",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L88",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
-      "norm_label": "consumer",
-      "id": "readme_consumer"
-    },
-    {
-      "label": "Message struct",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "lines 73-78",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
+      "id": "baseline_fr_producer_clauses",
       "community": 0,
-      "norm_label": "message struct",
-      "id": "readme_message"
+      "norm_label": "fr-producer-* clause group"
     },
     {
-      "label": "At-least-once delivery (claim/ack)",
+      "label": "FR-Consumer-* clause group",
       "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "lines 17-19",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L89",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
-      "norm_label": "at-least-once delivery (claim/ack)",
-      "id": "readme_at_least_once"
-    },
-    {
-      "label": "Visibility timeout",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "lines 20-21",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "visibility timeout",
-      "id": "readme_visibility_timeout"
-    },
-    {
-      "label": "Stream max length",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "lines 22-23",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
+      "id": "baseline_fr_consumer_clauses",
       "community": 0,
-      "norm_label": "stream max length",
-      "id": "readme_stream_max_length"
+      "norm_label": "fr-consumer-* clause group"
     },
     {
-      "label": "Graceful SIGINT/SIGTERM handling",
+      "label": "FR-Delivery-* clause group (at-least-once, claim/ack, visibility timeout)",
       "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "lines 24-25",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L90",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
-      "norm_label": "graceful sigint/sigterm handling",
-      "id": "readme_signal_handling"
-    },
-    {
-      "label": "Errors channel",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "line 26",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "errors channel",
-      "id": "readme_error_channel"
-    },
-    {
-      "label": "Graceful panic handling",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "line 27",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "graceful panic handling",
-      "id": "readme_panic_handling"
-    },
-    {
-      "label": "Concurrency setting",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "lines 28-29",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "concurrency setting",
-      "id": "readme_concurrency"
-    },
-    {
-      "label": "Batch size (BufferSize)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "line 30",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "batch size (buffersize)",
-      "id": "readme_batch_size"
-    },
-    {
-      "label": "Multiple streams support",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "line 31",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "multiple streams support",
-      "id": "readme_multi_streams"
-    },
-    {
-      "label": "ProducerOptions",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "lines 64-67",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "produceroptions",
-      "id": "readme_producer_options"
-    },
-    {
-      "label": "ConsumerOptions",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "lines 103-109",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "consumeroptions",
-      "id": "readme_consumer_options"
-    },
-    {
-      "label": "NewProducerWithOptions",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "line 64",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "newproducerwithoptions",
-      "id": "readme_new_producer_with_options"
-    },
-    {
-      "label": "NewConsumerWithOptions",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "line 103",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "newconsumerwithoptions",
-      "id": "readme_new_consumer_with_options"
-    },
-    {
-      "label": "Producer.Enqueue",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "line 73",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "producer.enqueue",
-      "id": "readme_enqueue"
-    },
-    {
-      "label": "Consumer.Register",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "line 114",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "consumer.register",
-      "id": "readme_register"
-    },
-    {
-      "label": "Consumer.Run",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "line 124",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "consumer.run",
-      "id": "readme_run"
-    },
-    {
-      "label": "github.com/robinjoseph08/redisqueue/v2 module",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "lines 41-47",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "github.com/robinjoseph08/redisqueue/v2 module",
-      "id": "readme_module_v2"
-    },
-    {
-      "label": "main branch (fork)",
-      "file_type": "document",
-      "source_file": "x_fork.branch-origin.md",
-      "source_location": "lines 1-14",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
+      "id": "baseline_fr_delivery_clauses",
       "community": 6,
-      "norm_label": "main branch (fork)",
-      "id": "x_fork_branch_origin_main_branch"
+      "norm_label": "fr-delivery-* clause group (at-least-once, claim/ack, visibility timeout)"
     },
     {
-      "label": "miso168net/fork260506-redisqueue",
+      "label": "FR-Lifecycle-* clause group (signals, shutdown, panic recovery)",
       "file_type": "document",
-      "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 7",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L91",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "baseline_fr_lifecycle_clauses",
       "community": 0,
-      "norm_label": "miso168net/fork260506-redisqueue",
-      "id": "x_fork_branch_origin_repo"
+      "norm_label": "fr-lifecycle-* clause group (signals, shutdown, panic recovery)"
     },
     {
-      "label": "robinjoseph08/redisqueue (upstream)",
+      "label": "FR-Errors-* clause group (Errors channel, validation, preflight)",
       "file_type": "document",
-      "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 8",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L92",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "baseline_fr_errors_clauses",
       "community": 0,
-      "norm_label": "robinjoseph08/redisqueue (upstream)",
-      "id": "x_fork_branch_origin_upstream"
+      "norm_label": "fr-errors-* clause group (errors channel, validation, preflight)"
     },
     {
-      "label": "go-admin-team/redisqueue (intermediate)",
+      "label": "FR-Internal-* clause group (newRedisClient, redisPreflightChecks, etc.)",
       "file_type": "document",
-      "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 8",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L93",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "baseline_fr_internal_clauses",
       "community": 0,
-      "norm_label": "go-admin-team/redisqueue (intermediate)",
-      "id": "x_fork_branch_origin_intermediate"
+      "norm_label": "fr-internal-* clause group (newredisclient, redispreflightchecks, etc.)"
     },
     {
-      "label": "master branch",
+      "label": "US1: Producer enqueues messages to Redis Stream",
       "file_type": "document",
-      "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 11",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L66",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
-      "norm_label": "master branch",
-      "id": "x_fork_branch_origin_master"
+      "id": "baseline_use_case_us1_producer",
+      "community": 0,
+      "norm_label": "us1: producer enqueues messages to redis stream"
     },
     {
-      "label": "HEAD 508101c (Go 1.20 upgrade)",
+      "label": "US2: Consumer at-least-once processing",
       "file_type": "document",
-      "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 12",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L67",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "baseline_use_case_us2_consumer",
       "community": 6,
-      "norm_label": "head 508101c (go 1.20 upgrade)",
-      "id": "x_fork_branch_origin_head_508101c"
+      "norm_label": "us2: consumer at-least-once processing"
     },
     {
-      "label": "Rationale: unify default branch name to main",
+      "label": "US3: Consumer survives panics, signals, stuck handlers",
       "file_type": "document",
-      "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 14",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L68",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
-      "norm_label": "rationale: unify default branch name to main",
-      "id": "x_fork_branch_origin_rationale_naming"
+      "id": "baseline_use_case_us3_resilience",
+      "community": 0,
+      "norm_label": "us3: consumer survives panics, signals, stuck handlers"
     },
     {
-      "label": "Rationale: preserve master without rewriting history",
+      "label": "US4: One Consumer registered against multiple streams",
       "file_type": "document",
-      "source_file": "x_fork.branch-origin.md",
-      "source_location": "lines 18-20",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L69",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
-      "norm_label": "rationale: preserve master without rewriting history",
-      "id": "x_fork_branch_origin_rationale_history"
+      "id": "baseline_use_case_us4_multistream",
+      "community": 0,
+      "norm_label": "us4: one consumer registered against multiple streams"
+    },
+    {
+      "label": "SC-004 traceability FR-* <-> test functions (gap report driver)",
+      "file_type": "rationale",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L114-120",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "baseline_sc_004_traceability_matrix",
+      "community": 0,
+      "norm_label": "sc-004 traceability fr-* <-> test functions (gap report driver)"
+    },
+    {
+      "label": "Gap Report appendix (untested clauses, risk levels)",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L137-147",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "baseline_gap_report_appendix",
+      "community": 0,
+      "norm_label": "gap report appendix (untested clauses, risk levels)"
+    },
+    {
+      "label": "next step: invoke superpowers:writing-plans",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L210-215",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "baseline_next_step_writing_plans",
+      "community": 0,
+      "norm_label": "next step: invoke superpowers:writing-plans"
     }
   ],
   "links": [
@@ -1012,11 +1232,9 @@
       "source_file": "consumer.go",
       "source_location": "L16",
       "weight": 1.0,
-      "_src": "consumer_go",
-      "_tgt": "consumer_consumerfunc",
-      "confidence_score": 1.0,
       "source": "consumer_go",
-      "target": "consumer_consumerfunc"
+      "target": "consumer_consumerfunc",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1024,11 +1242,9 @@
       "source_file": "consumer.go",
       "source_location": "L18",
       "weight": 1.0,
-      "_src": "consumer_go",
-      "_tgt": "consumer_registeredconsumer",
-      "confidence_score": 1.0,
       "source": "consumer_go",
-      "target": "consumer_registeredconsumer"
+      "target": "consumer_registeredconsumer",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1036,11 +1252,9 @@
       "source_file": "consumer.go",
       "source_location": "L24",
       "weight": 1.0,
-      "_src": "consumer_go",
-      "_tgt": "consumer_consumeroptions",
-      "confidence_score": 1.0,
       "source": "consumer_go",
-      "target": "consumer_consumeroptions"
+      "target": "consumer_consumeroptions",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1048,11 +1262,9 @@
       "source_file": "consumer.go",
       "source_location": "L69",
       "weight": 1.0,
-      "_src": "consumer_go",
-      "_tgt": "consumer_consumer",
-      "confidence_score": 1.0,
       "source": "consumer_go",
-      "target": "consumer_consumer"
+      "target": "consumer_consumer",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1060,11 +1272,9 @@
       "source_file": "consumer.go",
       "source_location": "L102",
       "weight": 1.0,
-      "_src": "consumer_go",
-      "_tgt": "consumer_newconsumer",
-      "confidence_score": 1.0,
       "source": "consumer_go",
-      "target": "consumer_newconsumer"
+      "target": "consumer_newconsumer",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1072,11 +1282,9 @@
       "source_file": "consumer.go",
       "source_location": "L110",
       "weight": 1.0,
-      "_src": "consumer_go",
-      "_tgt": "consumer_newconsumerwithoptions",
-      "confidence_score": 1.0,
       "source": "consumer_go",
-      "target": "consumer_newconsumerwithoptions"
+      "target": "consumer_newconsumerwithoptions",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1084,11 +1292,9 @@
       "source_file": "consumer.go",
       "source_location": "L161",
       "weight": 1.0,
-      "_src": "consumer_consumer",
-      "_tgt": "consumer_consumer_registerwithlastid",
-      "confidence_score": 1.0,
       "source": "consumer_consumer",
-      "target": "consumer_consumer_registerwithlastid"
+      "target": "consumer_consumer_registerwithlastid",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1096,11 +1302,9 @@
       "source_file": "consumer.go",
       "source_location": "L176",
       "weight": 1.0,
-      "_src": "consumer_consumer",
-      "_tgt": "consumer_consumer_register",
-      "confidence_score": 1.0,
       "source": "consumer_consumer",
-      "target": "consumer_consumer_register"
+      "target": "consumer_consumer_register",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1108,11 +1312,9 @@
       "source_file": "consumer.go",
       "source_location": "L186",
       "weight": 1.0,
-      "_src": "consumer_consumer",
-      "_tgt": "consumer_consumer_run",
-      "confidence_score": 1.0,
       "source": "consumer_consumer",
-      "target": "consumer_consumer_run"
+      "target": "consumer_consumer_run",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1120,11 +1322,9 @@
       "source_file": "consumer.go",
       "source_location": "L228",
       "weight": 1.0,
-      "_src": "consumer_consumer",
-      "_tgt": "consumer_consumer_shutdown",
-      "confidence_score": 1.0,
       "source": "consumer_consumer",
-      "target": "consumer_consumer_shutdown"
+      "target": "consumer_consumer_shutdown",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1132,11 +1332,9 @@
       "source_file": "consumer.go",
       "source_location": "L241",
       "weight": 1.0,
-      "_src": "consumer_consumer",
-      "_tgt": "consumer_consumer_reclaim",
-      "confidence_score": 1.0,
       "source": "consumer_consumer",
-      "target": "consumer_consumer_reclaim"
+      "target": "consumer_consumer_reclaim",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1144,11 +1342,9 @@
       "source_file": "consumer.go",
       "source_location": "L328",
       "weight": 1.0,
-      "_src": "consumer_consumer",
-      "_tgt": "consumer_consumer_poll",
-      "confidence_score": 1.0,
       "source": "consumer_consumer",
-      "target": "consumer_consumer_poll"
+      "target": "consumer_consumer_poll",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1156,11 +1352,9 @@
       "source_file": "consumer.go",
       "source_location": "L366",
       "weight": 1.0,
-      "_src": "consumer_consumer",
-      "_tgt": "consumer_consumer_enqueue",
-      "confidence_score": 1.0,
       "source": "consumer_consumer",
-      "target": "consumer_consumer_enqueue"
+      "target": "consumer_consumer_enqueue",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1168,11 +1362,9 @@
       "source_file": "consumer.go",
       "source_location": "L382",
       "weight": 1.0,
-      "_src": "consumer_consumer",
-      "_tgt": "consumer_consumer_work",
-      "confidence_score": 1.0,
       "source": "consumer_consumer",
-      "target": "consumer_consumer_work"
+      "target": "consumer_consumer_work",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1180,11 +1372,9 @@
       "source_file": "consumer.go",
       "source_location": "L404",
       "weight": 1.0,
-      "_src": "consumer_consumer",
-      "_tgt": "consumer_consumer_process",
-      "confidence_score": 1.0,
       "source": "consumer_consumer",
-      "target": "consumer_consumer_process"
+      "target": "consumer_consumer_process",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1192,105 +1382,95 @@
       "source_file": "consumer.go",
       "source_location": "L103",
       "weight": 1.0,
-      "_src": "consumer_newconsumer",
-      "_tgt": "consumer_newconsumerwithoptions",
-      "confidence_score": 1.0,
       "source": "consumer_newconsumer",
-      "target": "consumer_newconsumerwithoptions"
+      "target": "consumer_newconsumerwithoptions",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L17",
       "weight": 1.0,
-      "_src": "consumer_test_testnewconsumer",
-      "_tgt": "consumer_newconsumer",
       "source": "consumer_newconsumer",
       "target": "consumer_test_testnewconsumer"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L80",
       "weight": 1.0,
-      "_src": "consumer_test_testregister",
-      "_tgt": "consumer_newconsumer",
       "source": "consumer_newconsumer",
       "target": "consumer_test_testregister"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L118",
       "weight": 1.0,
-      "_src": "consumer_test_testregisterwithlastid",
-      "_tgt": "consumer_newconsumer",
       "source": "consumer_newconsumer",
       "target": "consumer_test_testregisterwithlastid"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L133",
       "weight": 1.0,
-      "_src": "consumer_test_testrun",
-      "_tgt": "consumer_newconsumer",
       "source": "consumer_newconsumer",
       "target": "consumer_test_testrun"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer.go",
       "source_location": "L131",
       "weight": 1.0,
-      "_src": "consumer_newconsumerwithoptions",
-      "_tgt": "redis_newredisclient",
       "source": "consumer_newconsumerwithoptions",
       "target": "redis_newredisclient"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer.go",
       "source_location": "L134",
       "weight": 1.0,
-      "_src": "consumer_newconsumerwithoptions",
-      "_tgt": "redis_redispreflightchecks",
       "source": "consumer_newconsumerwithoptions",
       "target": "redis_redispreflightchecks"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L26",
       "weight": 1.0,
-      "_src": "consumer_test_testnewconsumerwithoptions",
-      "_tgt": "consumer_newconsumerwithoptions",
       "source": "consumer_newconsumerwithoptions",
       "target": "consumer_test_testnewconsumerwithoptions"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L147",
       "weight": 1.0,
-      "_src": "consumer_test_testrun",
-      "_tgt": "consumer_newconsumerwithoptions",
       "source": "consumer_newconsumerwithoptions",
       "target": "consumer_test_testrun"
     },
@@ -1300,45 +1480,40 @@
       "source_file": "consumer.go",
       "source_location": "L177",
       "weight": 1.0,
-      "_src": "consumer_consumer_register",
-      "_tgt": "consumer_consumer_registerwithlastid",
-      "confidence_score": 1.0,
       "source": "consumer_consumer_registerwithlastid",
-      "target": "consumer_consumer_register"
+      "target": "consumer_consumer_register",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L121",
       "weight": 1.0,
-      "_src": "consumer_test_testregisterwithlastid",
-      "_tgt": "consumer_consumer_registerwithlastid",
       "source": "consumer_consumer_registerwithlastid",
       "target": "consumer_test_testregisterwithlastid"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L83",
       "weight": 1.0,
-      "_src": "consumer_test_testregister",
-      "_tgt": "consumer_consumer_register",
       "source": "consumer_consumer_register",
       "target": "consumer_test_testregister"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L172",
       "weight": 1.0,
-      "_src": "consumer_test_testrun",
-      "_tgt": "consumer_consumer_register",
       "source": "consumer_consumer_register",
       "target": "consumer_test_testrun"
     },
@@ -1348,11 +1523,9 @@
       "source_file": "consumer.go",
       "source_location": "L206",
       "weight": 1.0,
-      "_src": "consumer_consumer_run",
-      "_tgt": "consumer_consumer_reclaim",
-      "confidence_score": 1.0,
       "source": "consumer_consumer_run",
-      "target": "consumer_consumer_reclaim"
+      "target": "consumer_consumer_reclaim",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1360,11 +1533,9 @@
       "source_file": "consumer.go",
       "source_location": "L207",
       "weight": 1.0,
-      "_src": "consumer_consumer_run",
-      "_tgt": "consumer_consumer_poll",
-      "confidence_score": 1.0,
       "source": "consumer_consumer_run",
-      "target": "consumer_consumer_poll"
+      "target": "consumer_consumer_poll",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1372,11 +1543,9 @@
       "source_file": "consumer.go",
       "source_location": "L212",
       "weight": 1.0,
-      "_src": "consumer_consumer_run",
-      "_tgt": "consumer_consumer_shutdown",
-      "confidence_score": 1.0,
       "source": "consumer_consumer_run",
-      "target": "consumer_consumer_shutdown"
+      "target": "consumer_consumer_shutdown",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1384,165 +1553,150 @@
       "source_file": "consumer.go",
       "source_location": "L218",
       "weight": 1.0,
-      "_src": "consumer_consumer_run",
-      "_tgt": "consumer_consumer_work",
-      "confidence_score": 1.0,
       "source": "consumer_consumer_run",
-      "target": "consumer_consumer_work"
+      "target": "consumer_consumer_work",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer.go",
       "source_location": "L209",
       "weight": 1.0,
-      "_src": "consumer_consumer_run",
-      "_tgt": "signals_newsignalhandler",
       "source": "consumer_consumer_run",
       "target": "signals_newsignalhandler"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L16",
       "weight": 1.0,
-      "_src": "consumer_test_testnewconsumer",
-      "_tgt": "consumer_consumer_run",
       "source": "consumer_consumer_run",
       "target": "consumer_test_testnewconsumer"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L25",
       "weight": 1.0,
-      "_src": "consumer_test_testnewconsumerwithoptions",
-      "_tgt": "consumer_consumer_run",
       "source": "consumer_consumer_run",
       "target": "consumer_test_testnewconsumerwithoptions"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L79",
       "weight": 1.0,
-      "_src": "consumer_test_testregister",
-      "_tgt": "consumer_consumer_run",
       "source": "consumer_consumer_run",
       "target": "consumer_test_testregister"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L117",
       "weight": 1.0,
-      "_src": "consumer_test_testregisterwithlastid",
-      "_tgt": "consumer_consumer_run",
       "source": "consumer_consumer_run",
       "target": "consumer_test_testregisterwithlastid"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L132",
       "weight": 1.0,
-      "_src": "consumer_test_testrun",
-      "_tgt": "consumer_consumer_run",
       "source": "consumer_consumer_run",
       "target": "consumer_test_testrun"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "producer_test.go",
       "source_location": "L12",
       "weight": 1.0,
-      "_src": "producer_test_testnewproducer",
-      "_tgt": "consumer_consumer_run",
       "source": "consumer_consumer_run",
       "target": "producer_test_testnewproducer"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "producer_test.go",
       "source_location": "L21",
       "weight": 1.0,
-      "_src": "producer_test_testnewproducerwithoptions",
-      "_tgt": "consumer_consumer_run",
       "source": "consumer_consumer_run",
       "target": "producer_test_testnewproducerwithoptions"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "producer_test.go",
       "source_location": "L51",
       "weight": 1.0,
-      "_src": "producer_test_testenqueue",
-      "_tgt": "consumer_consumer_run",
       "source": "consumer_consumer_run",
       "target": "producer_test_testenqueue"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "redis_test.go",
       "source_location": "L12",
       "weight": 1.0,
-      "_src": "redis_test_testnewredisclient",
-      "_tgt": "consumer_consumer_run",
       "source": "consumer_consumer_run",
       "target": "redis_test_testnewredisclient"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "redis_test.go",
       "source_location": "L29",
       "weight": 1.0,
-      "_src": "redis_test_testredispreflightchecks",
-      "_tgt": "consumer_consumer_run",
       "source": "consumer_consumer_run",
       "target": "redis_test_testredispreflightchecks"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "signals_test.go",
       "source_location": "L12",
       "weight": 1.0,
-      "_src": "signals_test_testnewsignalhandler",
-      "_tgt": "consumer_consumer_run",
       "source": "consumer_consumer_run",
       "target": "signals_test_testnewsignalhandler"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L174",
       "weight": 1.0,
-      "_src": "consumer_test_testrun",
-      "_tgt": "consumer_consumer_shutdown",
       "source": "consumer_consumer_shutdown",
       "target": "consumer_test_testrun"
     },
@@ -1552,21 +1706,18 @@
       "source_file": "consumer.go",
       "source_location": "L307",
       "weight": 1.0,
-      "_src": "consumer_consumer_reclaim",
-      "_tgt": "consumer_consumer_enqueue",
-      "confidence_score": 1.0,
       "source": "consumer_consumer_reclaim",
-      "target": "consumer_consumer_enqueue"
+      "target": "consumer_consumer_enqueue",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer.go",
       "source_location": "L311",
       "weight": 1.0,
-      "_src": "consumer_consumer_reclaim",
-      "_tgt": "redis_incrementmessageid",
       "source": "consumer_consumer_reclaim",
       "target": "redis_incrementmessageid"
     },
@@ -1576,11 +1727,9 @@
       "source_file": "consumer.go",
       "source_location": "L358",
       "weight": 1.0,
-      "_src": "consumer_consumer_poll",
-      "_tgt": "consumer_consumer_enqueue",
-      "confidence_score": 1.0,
       "source": "consumer_consumer_poll",
-      "target": "consumer_consumer_enqueue"
+      "target": "consumer_consumer_enqueue",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1588,11 +1737,9 @@
       "source_file": "consumer.go",
       "source_location": "L388",
       "weight": 1.0,
-      "_src": "consumer_consumer_work",
-      "_tgt": "consumer_consumer_process",
-      "confidence_score": 1.0,
       "source": "consumer_consumer_work",
-      "target": "consumer_consumer_process"
+      "target": "consumer_consumer_process",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1600,11 +1747,9 @@
       "source_file": "consumer_test.go",
       "source_location": "L15",
       "weight": 1.0,
-      "_src": "consumer_test_go",
-      "_tgt": "consumer_test_testnewconsumer",
-      "confidence_score": 1.0,
       "source": "consumer_test_go",
-      "target": "consumer_test_testnewconsumer"
+      "target": "consumer_test_testnewconsumer",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1612,11 +1757,9 @@
       "source_file": "consumer_test.go",
       "source_location": "L24",
       "weight": 1.0,
-      "_src": "consumer_test_go",
-      "_tgt": "consumer_test_testnewconsumerwithoptions",
-      "confidence_score": 1.0,
       "source": "consumer_test_go",
-      "target": "consumer_test_testnewconsumerwithoptions"
+      "target": "consumer_test_testnewconsumerwithoptions",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1624,11 +1767,9 @@
       "source_file": "consumer_test.go",
       "source_location": "L74",
       "weight": 1.0,
-      "_src": "consumer_test_go",
-      "_tgt": "consumer_test_testregister",
-      "confidence_score": 1.0,
       "source": "consumer_test_go",
-      "target": "consumer_test_testregister"
+      "target": "consumer_test_testregister",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1636,11 +1777,9 @@
       "source_file": "consumer_test.go",
       "source_location": "L89",
       "weight": 1.0,
-      "_src": "consumer_test_go",
-      "_tgt": "consumer_test_testregisterwithlastid",
-      "confidence_score": 1.0,
       "source": "consumer_test_go",
-      "target": "consumer_test_testregisterwithlastid"
+      "target": "consumer_test_testregisterwithlastid",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1648,57 +1787,40 @@
       "source_file": "consumer_test.go",
       "source_location": "L131",
       "weight": 1.0,
-      "_src": "consumer_test_go",
-      "_tgt": "consumer_test_testrun",
-      "confidence_score": 1.0,
       "source": "consumer_test_go",
-      "target": "consumer_test_testrun"
+      "target": "consumer_test_testrun",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L46",
       "weight": 1.0,
-      "_src": "consumer_test_testnewconsumerwithoptions",
-      "_tgt": "redis_newredisclient",
       "source": "consumer_test_testnewconsumerwithoptions",
       "target": "redis_newredisclient"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L156",
       "weight": 1.0,
-      "_src": "consumer_test_testrun",
-      "_tgt": "producer_newproducer",
       "source": "consumer_test_testrun",
       "target": "producer_newproducer"
     },
     {
       "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "consumer_test.go",
-      "source_location": "L164",
-      "weight": 1.0,
-      "_src": "consumer_test_testrun",
-      "_tgt": "producer_producer_enqueue",
-      "source": "consumer_test_testrun",
-      "target": "producer_producer_enqueue"
-    },
-    {
-      "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "consumer_test.go",
       "source_location": "L260",
       "weight": 1.0,
-      "_src": "consumer_test_testrun",
-      "_tgt": "producer_newproducerwithoptions",
       "source": "consumer_test_testrun",
       "target": "producer_newproducerwithoptions"
     },
@@ -1708,11 +1830,9 @@
       "source_file": "message.go",
       "source_location": "L6",
       "weight": 1.0,
-      "_src": "message_go",
-      "_tgt": "message_message",
-      "confidence_score": 1.0,
       "source": "message_go",
-      "target": "message_message"
+      "target": "message_message",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1720,11 +1840,9 @@
       "source_file": "producer.go",
       "source_location": "L9",
       "weight": 1.0,
-      "_src": "producer_go",
-      "_tgt": "producer_produceroptions",
-      "confidence_score": 1.0,
       "source": "producer_go",
-      "target": "producer_produceroptions"
+      "target": "producer_produceroptions",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1732,11 +1850,9 @@
       "source_file": "producer.go",
       "source_location": "L37",
       "weight": 1.0,
-      "_src": "producer_go",
-      "_tgt": "producer_producer",
-      "confidence_score": 1.0,
       "source": "producer_go",
-      "target": "producer_producer"
+      "target": "producer_producer",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1744,11 +1860,9 @@
       "source_file": "producer.go",
       "source_location": "L50",
       "weight": 1.0,
-      "_src": "producer_go",
-      "_tgt": "producer_newproducer",
-      "confidence_score": 1.0,
       "source": "producer_go",
-      "target": "producer_newproducer"
+      "target": "producer_newproducer",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1756,11 +1870,9 @@
       "source_file": "producer.go",
       "source_location": "L55",
       "weight": 1.0,
-      "_src": "producer_go",
-      "_tgt": "producer_newproducerwithoptions",
-      "confidence_score": 1.0,
       "source": "producer_go",
-      "target": "producer_newproducerwithoptions"
+      "target": "producer_newproducerwithoptions",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -1768,11 +1880,9 @@
       "source_file": "producer.go",
       "source_location": "L78",
       "weight": 1.0,
-      "_src": "producer_producer",
-      "_tgt": "producer_producer_enqueue",
-      "confidence_score": 1.0,
       "source": "producer_producer",
-      "target": "producer_producer_enqueue"
+      "target": "producer_producer_enqueue",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1780,82 +1890,63 @@
       "source_file": "producer.go",
       "source_location": "L51",
       "weight": 1.0,
-      "_src": "producer_newproducer",
-      "_tgt": "producer_newproducerwithoptions",
-      "confidence_score": 1.0,
       "source": "producer_newproducer",
-      "target": "producer_newproducerwithoptions"
+      "target": "producer_newproducerwithoptions",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "producer_test.go",
       "source_location": "L13",
       "weight": 1.0,
-      "_src": "producer_test_testnewproducer",
-      "_tgt": "producer_newproducer",
       "source": "producer_newproducer",
       "target": "producer_test_testnewproducer"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "producer.go",
       "source_location": "L61",
       "weight": 1.0,
-      "_src": "producer_newproducerwithoptions",
-      "_tgt": "redis_newredisclient",
       "source": "producer_newproducerwithoptions",
       "target": "redis_newredisclient"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "producer.go",
       "source_location": "L64",
       "weight": 1.0,
-      "_src": "producer_newproducerwithoptions",
-      "_tgt": "redis_redispreflightchecks",
       "source": "producer_newproducerwithoptions",
       "target": "redis_redispreflightchecks"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "producer_test.go",
       "source_location": "L22",
       "weight": 1.0,
-      "_src": "producer_test_testnewproducerwithoptions",
-      "_tgt": "producer_newproducerwithoptions",
       "source": "producer_newproducerwithoptions",
       "target": "producer_test_testnewproducerwithoptions"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "producer_test.go",
       "source_location": "L52",
       "weight": 1.0,
-      "_src": "producer_test_testenqueue",
-      "_tgt": "producer_newproducerwithoptions",
       "source": "producer_newproducerwithoptions",
-      "target": "producer_test_testenqueue"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "producer_test.go",
-      "source_location": "L59",
-      "weight": 1.0,
-      "_src": "producer_test_testenqueue",
-      "_tgt": "producer_producer_enqueue",
-      "source": "producer_producer_enqueue",
       "target": "producer_test_testenqueue"
     },
     {
@@ -1864,11 +1955,9 @@
       "source_file": "producer_test.go",
       "source_location": "L11",
       "weight": 1.0,
-      "_src": "producer_test_go",
-      "_tgt": "producer_test_testnewproducer",
-      "confidence_score": 1.0,
       "source": "producer_test_go",
-      "target": "producer_test_testnewproducer"
+      "target": "producer_test_testnewproducer",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1876,11 +1965,9 @@
       "source_file": "producer_test.go",
       "source_location": "L20",
       "weight": 1.0,
-      "_src": "producer_test_go",
-      "_tgt": "producer_test_testnewproducerwithoptions",
-      "confidence_score": 1.0,
       "source": "producer_test_go",
-      "target": "producer_test_testnewproducerwithoptions"
+      "target": "producer_test_testnewproducerwithoptions",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1888,21 +1975,18 @@
       "source_file": "producer_test.go",
       "source_location": "L50",
       "weight": 1.0,
-      "_src": "producer_test_go",
-      "_tgt": "producer_test_testenqueue",
-      "confidence_score": 1.0,
       "source": "producer_test_go",
-      "target": "producer_test_testenqueue"
+      "target": "producer_test_testenqueue",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "producer_test.go",
       "source_location": "L29",
       "weight": 1.0,
-      "_src": "producer_test_testnewproducerwithoptions",
-      "_tgt": "redis_newredisclient",
       "source": "producer_test_testnewproducerwithoptions",
       "target": "redis_newredisclient"
     },
@@ -1912,11 +1996,9 @@
       "source_file": "redis.go",
       "source_location": "L22",
       "weight": 1.0,
-      "_src": "redis_go",
-      "_tgt": "redis_newredisclient",
-      "confidence_score": 1.0,
       "source": "redis_go",
-      "target": "redis_newredisclient"
+      "target": "redis_newredisclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1924,11 +2006,9 @@
       "source_file": "redis.go",
       "source_location": "L33",
       "weight": 1.0,
-      "_src": "redis_go",
-      "_tgt": "redis_redispreflightchecks",
-      "confidence_score": 1.0,
       "source": "redis_go",
-      "target": "redis_redispreflightchecks"
+      "target": "redis_redispreflightchecks",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1936,45 +2016,40 @@
       "source_file": "redis.go",
       "source_location": "L59",
       "weight": 1.0,
-      "_src": "redis_go",
-      "_tgt": "redis_incrementmessageid",
-      "confidence_score": 1.0,
       "source": "redis_go",
-      "target": "redis_incrementmessageid"
+      "target": "redis_incrementmessageid",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "redis_test.go",
       "source_location": "L14",
       "weight": 1.0,
-      "_src": "redis_test_testnewredisclient",
-      "_tgt": "redis_newredisclient",
       "source": "redis_newredisclient",
       "target": "redis_test_testnewredisclient"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "redis_test.go",
       "source_location": "L31",
       "weight": 1.0,
-      "_src": "redis_test_testredispreflightchecks",
-      "_tgt": "redis_newredisclient",
       "source": "redis_newredisclient",
       "target": "redis_test_testredispreflightchecks"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "redis_test.go",
       "source_location": "L33",
       "weight": 1.0,
-      "_src": "redis_test_testredispreflightchecks",
-      "_tgt": "redis_redispreflightchecks",
       "source": "redis_redispreflightchecks",
       "target": "redis_test_testredispreflightchecks"
     },
@@ -1984,11 +2059,9 @@
       "source_file": "redis_test.go",
       "source_location": "L11",
       "weight": 1.0,
-      "_src": "redis_test_go",
-      "_tgt": "redis_test_testnewredisclient",
-      "confidence_score": 1.0,
       "source": "redis_test_go",
-      "target": "redis_test_testnewredisclient"
+      "target": "redis_test_testnewredisclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1996,11 +2069,9 @@
       "source_file": "redis_test.go",
       "source_location": "L28",
       "weight": 1.0,
-      "_src": "redis_test_go",
-      "_tgt": "redis_test_testredispreflightchecks",
-      "confidence_score": 1.0,
       "source": "redis_test_go",
-      "target": "redis_test_testredispreflightchecks"
+      "target": "redis_test_testredispreflightchecks",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2008,21 +2079,18 @@
       "source_file": "signals.go",
       "source_location": "L12",
       "weight": 1.0,
-      "_src": "signals_go",
-      "_tgt": "signals_newsignalhandler",
-      "confidence_score": 1.0,
       "source": "signals_go",
-      "target": "signals_newsignalhandler"
+      "target": "signals_newsignalhandler",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "signals_test.go",
       "source_location": "L13",
       "weight": 1.0,
-      "_src": "signals_test_testnewsignalhandler",
-      "_tgt": "signals_newsignalhandler",
       "source": "signals_newsignalhandler",
       "target": "signals_test_testnewsignalhandler"
     },
@@ -2032,595 +2100,703 @@
       "source_file": "signals_test.go",
       "source_location": "L11",
       "weight": 1.0,
-      "_src": "signals_test_go",
-      "_tgt": "signals_test_testnewsignalhandler",
-      "confidence_score": 1.0,
       "source": "signals_test_go",
-      "target": "signals_test_testnewsignalhandler"
+      "target": "signals_test_testnewsignalhandler",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "line 7",
+      "source_location": "L15",
       "weight": 1.0,
-      "_src": "changelog_v210",
-      "_tgt": "changelog_redis_universalclient",
-      "source": "changelog_v210",
-      "target": "changelog_redis_universalclient"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "line 15",
-      "weight": 1.0,
-      "_src": "changelog_v200",
-      "_tgt": "changelog_goredis_v7",
-      "source": "changelog_v200",
-      "target": "changelog_goredis_v7"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "CHANGELOG.md",
-      "source_location": "line 15",
-      "weight": 1.0,
-      "_src": "changelog_v200",
-      "_tgt": "readme_module_v2",
-      "source": "changelog_v200",
-      "target": "readme_module_v2"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "line 31",
-      "weight": 1.0,
-      "_src": "changelog_v101",
-      "_tgt": "changelog_reclaim_fix",
-      "source": "changelog_v101",
-      "target": "changelog_reclaim_fix"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "line 43",
-      "weight": 1.0,
-      "_src": "changelog_v100",
-      "_tgt": "changelog_first_producer_consumer",
-      "source": "changelog_v100",
-      "target": "changelog_first_producer_consumer"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.9,
-      "source_file": "CHANGELOG.md",
-      "source_location": "line 43",
-      "weight": 1.0,
-      "_src": "changelog_first_producer_consumer",
-      "_tgt": "readme_producer",
-      "source": "changelog_first_producer_consumer",
-      "target": "readme_producer"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.9,
-      "source_file": "CHANGELOG.md",
-      "source_location": "line 43",
-      "weight": 1.0,
-      "_src": "changelog_first_producer_consumer",
-      "_tgt": "readme_consumer",
-      "source": "changelog_first_producer_consumer",
-      "target": "readme_consumer"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "LICENSE.txt",
-      "source_location": "line 3",
-      "weight": 1.0,
-      "_src": "license_mit",
-      "_tgt": "license_robin_joseph",
-      "source": "license_mit",
-      "target": "license_robin_joseph"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "README.md",
-      "source_location": "line 8",
-      "weight": 1.0,
-      "_src": "readme_redisqueue",
-      "_tgt": "license_mit",
-      "source": "license_mit",
-      "target": "readme_redisqueue"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "lines 10-11",
-      "weight": 1.0,
-      "_src": "readme_redisqueue",
-      "_tgt": "readme_redis_streams",
-      "source": "readme_redisqueue",
-      "target": "readme_redis_streams"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "line 15",
-      "weight": 1.0,
-      "_src": "readme_redisqueue",
-      "_tgt": "readme_producer",
-      "source": "readme_redisqueue",
-      "target": "readme_producer"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "line 16",
-      "weight": 1.0,
-      "_src": "readme_redisqueue",
-      "_tgt": "readme_consumer",
-      "source": "readme_redisqueue",
-      "target": "readme_consumer"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.9,
-      "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 7",
-      "weight": 1.0,
-      "_src": "x_fork_branch_origin_repo",
-      "_tgt": "readme_redisqueue",
-      "source": "readme_redisqueue",
-      "target": "x_fork_branch_origin_repo"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "README.md",
-      "source_location": "lines 73-78",
-      "weight": 1.0,
-      "_src": "readme_enqueue",
-      "_tgt": "readme_redis_streams",
-      "source": "readme_redis_streams",
-      "target": "readme_enqueue"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "lines 73-78",
-      "weight": 1.0,
-      "_src": "readme_producer",
-      "_tgt": "readme_message",
-      "source": "readme_producer",
-      "target": "readme_message"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "line 73",
-      "weight": 1.0,
-      "_src": "readme_producer",
-      "_tgt": "readme_enqueue",
-      "source": "readme_producer",
-      "target": "readme_enqueue"
-    },
-    {
-      "relation": "implements",
-      "confidence": "INFERRED",
-      "confidence_score": 0.9,
-      "source_file": "README.md",
-      "source_location": "line 64",
-      "weight": 1.0,
-      "_src": "readme_new_producer_with_options",
-      "_tgt": "readme_producer",
-      "source": "readme_producer",
-      "target": "readme_new_producer_with_options"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "lines 22-23",
-      "weight": 1.0,
-      "_src": "readme_producer",
-      "_tgt": "readme_stream_max_length",
-      "source": "readme_producer",
-      "target": "readme_stream_max_length"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "line 128",
-      "weight": 1.0,
-      "_src": "readme_consumer",
-      "_tgt": "readme_message",
-      "source": "readme_consumer",
-      "target": "readme_message"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "line 114",
-      "weight": 1.0,
-      "_src": "readme_consumer",
-      "_tgt": "readme_register",
-      "source": "readme_consumer",
-      "target": "readme_register"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "line 124",
-      "weight": 1.0,
-      "_src": "readme_consumer",
-      "_tgt": "readme_run",
-      "source": "readme_consumer",
-      "target": "readme_run"
-    },
-    {
-      "relation": "implements",
-      "confidence": "INFERRED",
-      "confidence_score": 0.9,
-      "source_file": "README.md",
-      "source_location": "line 103",
-      "weight": 1.0,
-      "_src": "readme_new_consumer_with_options",
-      "_tgt": "readme_consumer",
-      "source": "readme_consumer",
-      "target": "readme_new_consumer_with_options"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "lines 17-19",
-      "weight": 1.0,
-      "_src": "readme_consumer",
-      "_tgt": "readme_at_least_once",
-      "source": "readme_consumer",
-      "target": "readme_at_least_once"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "lines 20-21",
-      "weight": 1.0,
-      "_src": "readme_consumer",
-      "_tgt": "readme_visibility_timeout",
-      "source": "readme_consumer",
-      "target": "readme_visibility_timeout"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "lines 24-25",
-      "weight": 1.0,
-      "_src": "readme_consumer",
-      "_tgt": "readme_signal_handling",
-      "source": "readme_consumer",
-      "target": "readme_signal_handling"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "lines 117-121",
-      "weight": 1.0,
-      "_src": "readme_consumer",
-      "_tgt": "readme_error_channel",
-      "source": "readme_consumer",
-      "target": "readme_error_channel"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "line 27",
-      "weight": 1.0,
-      "_src": "readme_consumer",
-      "_tgt": "readme_panic_handling",
-      "source": "readme_consumer",
-      "target": "readme_panic_handling"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "lines 28-29",
-      "weight": 1.0,
-      "_src": "readme_consumer",
-      "_tgt": "readme_concurrency",
-      "source": "readme_consumer",
-      "target": "readme_concurrency"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "line 30",
-      "weight": 1.0,
-      "_src": "readme_consumer",
-      "_tgt": "readme_batch_size",
-      "source": "readme_consumer",
-      "target": "readme_batch_size"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "line 31",
-      "weight": 1.0,
-      "_src": "readme_consumer",
-      "_tgt": "readme_multi_streams",
-      "source": "readme_consumer",
-      "target": "readme_multi_streams"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "README.md",
-      "source_location": "lines 17-21",
-      "weight": 1.0,
-      "_src": "readme_at_least_once",
-      "_tgt": "readme_visibility_timeout",
-      "source": "readme_at_least_once",
-      "target": "readme_visibility_timeout"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "lines 103-109",
-      "weight": 1.0,
-      "_src": "readme_visibility_timeout",
-      "_tgt": "readme_consumer_options",
-      "source": "readme_visibility_timeout",
-      "target": "readme_consumer_options"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "lines 64-67",
-      "weight": 1.0,
-      "_src": "readme_stream_max_length",
-      "_tgt": "readme_producer_options",
-      "source": "readme_stream_max_length",
-      "target": "readme_producer_options"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "lines 103-109",
-      "weight": 1.0,
-      "_src": "readme_concurrency",
-      "_tgt": "readme_consumer_options",
-      "source": "readme_concurrency",
-      "target": "readme_consumer_options"
+      "source": "changelog_v2_0_0",
+      "target": "readme_module_path_v2"
     },
     {
       "relation": "semantically_similar_to",
       "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "README.md",
-      "source_location": "lines 28-30",
+      "confidence_score": 0.75,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L31",
       "weight": 1.0,
-      "_src": "readme_batch_size",
-      "_tgt": "readme_concurrency",
-      "source": "readme_concurrency",
-      "target": "readme_batch_size"
+      "source": "changelog_v1_0_1_reclaim_fix",
+      "target": "baseline_fr_delivery_clauses"
     },
     {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "lines 103-109",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L43",
       "weight": 1.0,
-      "_src": "readme_batch_size",
-      "_tgt": "readme_consumer_options",
-      "source": "readme_batch_size",
-      "target": "readme_consumer_options"
+      "source": "changelog_v1_0_0",
+      "target": "readme_redisqueue_library"
     },
     {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "line 64",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "CLAUDE.md",
+      "source_location": "L1-4",
       "weight": 1.0,
-      "_src": "readme_new_producer_with_options",
-      "_tgt": "readme_producer_options",
-      "source": "readme_producer_options",
-      "target": "readme_new_producer_with_options"
+      "source": "claudemd_speckit_block",
+      "target": "baseline_design_doc"
     },
     {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "line 103",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "CLAUDE.md",
+      "source_location": "L6-13",
       "weight": 1.0,
-      "_src": "readme_new_consumer_with_options",
-      "_tgt": "readme_consumer_options",
-      "source": "readme_consumer_options",
-      "target": "readme_new_consumer_with_options"
+      "source": "claudemd_graphify_rules",
+      "target": "graphify_session_2026_05_06"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 11",
+      "source_location": "L8",
       "weight": 1.0,
-      "_src": "x_fork_branch_origin_main_branch",
-      "_tgt": "x_fork_branch_origin_master",
-      "source": "x_fork_branch_origin_main_branch",
-      "target": "x_fork_branch_origin_master"
+      "source": "license_mit_robin_joseph",
+      "target": "fork_robinjoseph08_redisqueue_upstream"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "readme_features_at_least_once",
+      "target": "baseline_fr_delivery_clauses"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README.md",
+      "source_location": "L17-19",
+      "weight": 1.0,
+      "source": "readme_features_at_least_once",
+      "target": "baseline_use_case_us2_consumer"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "readme_features_visibility_timeout",
+      "target": "baseline_fr_delivery_clauses"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "readme_features_signal_handling",
+      "target": "baseline_fr_lifecycle_clauses"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "readme_features_panic_recovery",
+      "target": "baseline_fr_lifecycle_clauses"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 12",
+      "source_location": "L8",
       "weight": 1.0,
-      "_src": "x_fork_branch_origin_main_branch",
-      "_tgt": "x_fork_branch_origin_head_508101c",
-      "source": "x_fork_branch_origin_main_branch",
-      "target": "x_fork_branch_origin_head_508101c"
+      "source": "readme_module_path_v2",
+      "target": "fork_robinjoseph08_redisqueue_upstream"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "README.md",
+      "source_location": "L52-88",
+      "weight": 1.0,
+      "source": "readme_producer_example",
+      "target": "tree_producer_go_role"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "README.md",
+      "source_location": "L92-132",
+      "weight": 1.0,
+      "source": "readme_consumer_example",
+      "target": "tree_consumer_go_role"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 14",
+      "source_location": "L15",
       "weight": 1.0,
-      "_src": "x_fork_branch_origin_rationale_naming",
-      "_tgt": "x_fork_branch_origin_main_branch",
-      "source": "x_fork_branch_origin_main_branch",
-      "target": "x_fork_branch_origin_rationale_naming"
+      "source": "branch_origin_main_2026_05_06",
+      "target": "branch_origin_dual_branches"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "branch_origin_main_2026_05_06",
+      "target": "tree_snapshot_2026_05_06"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 8",
+      "source_location": "L8",
       "weight": 1.0,
-      "_src": "x_fork_branch_origin_repo",
-      "_tgt": "x_fork_branch_origin_upstream",
-      "source": "x_fork_branch_origin_repo",
-      "target": "x_fork_branch_origin_upstream"
+      "source": "fork_miso168net_redisqueue",
+      "target": "fork_robinjoseph08_redisqueue_upstream"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 8",
+      "source_location": "L9",
       "weight": 1.0,
-      "_src": "x_fork_branch_origin_repo",
-      "_tgt": "x_fork_branch_origin_intermediate",
-      "source": "x_fork_branch_origin_repo",
-      "target": "x_fork_branch_origin_intermediate"
+      "source": "fork_miso168net_redisqueue",
+      "target": "fork_go_admin_team_redisqueue_intermediate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "fork_miso168net_redisqueue",
+      "target": "graphify_fork_chain_conclusion"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "x_fork.branch-origin.md",
-      "source_location": "line 8",
+      "source_location": "L9",
       "weight": 1.0,
-      "_src": "x_fork_branch_origin_intermediate",
-      "_tgt": "x_fork_branch_origin_upstream",
-      "source": "x_fork_branch_origin_upstream",
-      "target": "x_fork_branch_origin_intermediate"
+      "source": "fork_robinjoseph08_redisqueue_upstream",
+      "target": "fork_go_admin_team_redisqueue_intermediate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "fork_robinjoseph08_redisqueue_upstream",
+      "target": "graphify_fork_chain_conclusion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "fork_go_admin_team_redisqueue_intermediate",
+      "target": "graphify_fork_chain_conclusion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L17-25",
+      "weight": 1.0,
+      "source": "graphify_session_2026_05_06",
+      "target": "graphify_pipeline_summary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "graphify_session_2026_05_06",
+      "target": "graphify_god_node_consumer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "graphify_session_2026_05_06",
+      "target": "graphify_god_node_newredisclient"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "graphify_session_2026_05_06",
+      "target": "graphify_god_node_newproducerwithoptions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "graphify_session_2026_05_06",
+      "target": "graphify_god_node_testrun"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L82-92",
+      "weight": 1.0,
+      "source": "graphify_session_2026_05_06",
+      "target": "graphify_fork_chain_conclusion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L94-104",
+      "weight": 1.0,
+      "source": "graphify_session_2026_05_06",
+      "target": "graphify_ambiguous_to_extracted_upgrade"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.graphify-20260506.md",
+      "source_location": "L107-117",
+      "weight": 1.0,
+      "source": "graphify_session_2026_05_06",
+      "target": "graphify_pr_1_merge"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L9-10,L46",
+      "weight": 1.0,
+      "source": "graphify_session_2026_05_06",
+      "target": "tree_snapshot_2026_05_06"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "graphify_session_2026_05_06",
+      "target": "baseline_design_doc"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "graphify_god_node_consumer",
+      "target": "tree_consumer_go_role"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "graphify_god_node_newredisclient",
+      "target": "tree_redis_go_role"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "graphify_god_node_newproducerwithoptions",
+      "target": "tree_producer_go_role"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L21,L27",
+      "weight": 1.0,
+      "source": "tree_consumer_go_role",
+      "target": "tree_redis_go_role"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L21,L29",
+      "weight": 1.0,
+      "source": "tree_consumer_go_role",
+      "target": "tree_signals_go_role"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "tree_consumer_go_role",
+      "target": "tree_message_go_role"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "tree_producer_go_role",
+      "target": "tree_redis_go_role"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "tree_producer_go_role",
+      "target": "tree_message_go_role"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "x_fork.tree-20260506.md",
+      "source_location": "L58-62",
+      "weight": 1.0,
+      "source": "tree_no_options_go_convention",
+      "target": "tree_module_path_upgrade_strategy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_anchor_commit_db9f9f9"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L17-28",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_goal_freeze_contract"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L34-35",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_coverage_depth_c"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L78-99",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_layer_tag_design"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L21-23,L97",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "constitution_principle_ii_api_stability"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_fr_producer_clauses"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_fr_consumer_clauses"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_fr_delivery_clauses"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_fr_lifecycle_clauses"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_fr_errors_clauses"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_fr_internal_clauses"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_use_case_us1_producer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_use_case_us2_consumer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_use_case_us3_resilience"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_use_case_us4_multistream"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L114-120",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_sc_004_traceability_matrix"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L137-147",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_gap_report_appendix"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L210-215",
+      "weight": 1.0,
+      "source": "baseline_design_doc",
+      "target": "baseline_next_step_writing_plans"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "x_fork.branch-origin.md",
-      "source_location": "lines 18-20",
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L97-99",
       "weight": 1.0,
-      "_src": "x_fork_branch_origin_rationale_history",
-      "_tgt": "x_fork_branch_origin_master",
-      "source": "x_fork_branch_origin_master",
-      "target": "x_fork_branch_origin_rationale_history"
+      "source": "constitution_principle_ii_api_stability",
+      "target": "baseline_layer_tag_design"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L66,L88",
+      "weight": 1.0,
+      "source": "baseline_fr_producer_clauses",
+      "target": "baseline_use_case_us1_producer"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L69,L89",
+      "weight": 1.0,
+      "source": "baseline_fr_consumer_clauses",
+      "target": "baseline_use_case_us4_multistream"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L67,L90",
+      "weight": 1.0,
+      "source": "baseline_fr_delivery_clauses",
+      "target": "baseline_use_case_us2_consumer"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L68,L91",
+      "weight": 1.0,
+      "source": "baseline_fr_lifecycle_clauses",
+      "target": "baseline_use_case_us3_resilience"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md",
+      "source_location": "L114-120,L137-147",
+      "weight": 1.0,
+      "source": "baseline_sc_004_traceability_matrix",
+      "target": "baseline_gap_report_appendix"
     }
   ],
   "hyperedges": [
     {
-      "id": "hyper_at_least_once_pipeline",
-      "label": "At-least-once delivery pipeline",
+      "id": "fork_chain_three_repos",
+      "label": "Fork chain: upstream -> intermediate -> personal fork",
       "nodes": [
-        "readme_consumer",
-        "readme_at_least_once",
-        "readme_visibility_timeout",
-        "readme_signal_handling"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "README.md"
-    },
-    {
-      "id": "hyper_consumer_tuning_options",
-      "label": "Consumer tuning knobs",
-      "nodes": [
-        "readme_consumer_options",
-        "readme_visibility_timeout",
-        "readme_concurrency",
-        "readme_batch_size"
+        "fork_robinjoseph08_redisqueue_upstream",
+        "fork_go_admin_team_redisqueue_intermediate",
+        "fork_miso168net_redisqueue"
       ],
       "relation": "form",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "x_fork.branch-origin.md"
+    },
+    {
+      "id": "consumer_resilience_triad",
+      "label": "Consumer resilience triad (signals + panic recovery + at-least-once)",
+      "nodes": [
+        "readme_features_signal_handling",
+        "readme_features_panic_recovery",
+        "readme_features_at_least_once",
+        "baseline_use_case_us3_resilience"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
       "source_file": "README.md"
     },
     {
-      "id": "hyper_fork_lineage",
-      "label": "Fork lineage chain",
+      "id": "baseline_layer_tag_workflow",
+      "label": "Layer tag workflow ([Contract]/[Snapshot] + Constitution Principle II + traceability matrix)",
       "nodes": [
-        "x_fork_branch_origin_repo",
-        "x_fork_branch_origin_intermediate",
-        "x_fork_branch_origin_upstream",
-        "x_fork_branch_origin_main_branch"
+        "baseline_layer_tag_design",
+        "constitution_principle_ii_api_stability",
+        "baseline_sc_004_traceability_matrix",
+        "baseline_gap_report_appendix"
       ],
       "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "x_fork.branch-origin.md"
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "docs/superpowers/specs/2026-05-07-baseline-design.md"
     }
-  ]
+  ],
+  "built_at_commit": "25f3342c74ef30a1e082f854f29570d760ea9c86"
 }

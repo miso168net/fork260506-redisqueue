@@ -1,101 +1,108 @@
 {
   "colorGroups": [
     {
-      "query": "tag:#community/License_and_Initial_Release",
+      "query": "tag:#community/Baseline_Spec_Design",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Consumer_Configuration",
+      "query": "tag:#community/Fork_Meta_and_Graphify_Session",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Consumer_Lifecycle",
+      "query": "tag:#community/Consumer_Internals_and_Tests",
       "color": {
         "a": 1,
         "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Producer_and_Redis_Client",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
       }
     },
     {
       "query": "tag:#community/Consumer_Registration",
       "color": {
         "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/Producer_Implementation",
-      "color": {
-        "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Redis_Client_Layer",
+      "query": "tag:#community/Fork_Chain_and_Module_Identity",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Fork_Branch_Strategy",
+      "query": "tag:#community/At-Least-Once_Delivery",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/v2_Module_Upgrade",
+      "query": "tag:#community/Message_Type",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/Message_Type",
+      "query": "tag:#community/Library_Origin_(v1.0.0)",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/Universal_Client_Support",
+      "query": "tag:#community/Versioning_Strategy",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/Reclaim_ID_Fix",
+      "query": "tag:#community/Package_Doc",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Package_Doc",
+      "query": "tag:#community/Build_Tools_File",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Build_Tools",
+      "query": "tag:#community/Release_v2.1.0",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/Release_v1.1.0",
+      "query": "tag:#community/Build_Tools_Idiom",
       "color": {
         "a": 1,
         "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Coverage_Gate",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
       }
     }
   ]
